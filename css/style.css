@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+header,
+footer{
+    background-color: beige;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar img{
+    max-width: 30%;
+    margin: 1rem;
+}
+
+.title > h2 ,h3, h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-shadow:black 2px 4px 5px;
+}
+h1{
+    font-size: 5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+/*-----------main-----------*/
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;    
+}
+.hero{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 3rem;
+    height: 70vh;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; 
+}
+.news{
+    background-color: #F2F2F2;
+}
+.tablero{
+    display: flex;
+    justify-content: center;
+}
+.about > p{
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+.about > button{
+    background-color: red;
+    color: #F2F2F2;
+    font-weight: 600;
+    width: 30%;
+    padding: 0.7rem;
+}
+.banner{
+    background-color: #F2B263;
+    flex: 1;
+}
+.instagram{
+    background-color: #6322A4;
+    flex: 1;
+}
+.about{
+    color: #A64521;
+    background-color: #F2D680;
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+}
+
