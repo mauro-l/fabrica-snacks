@@ -167,9 +167,18 @@ h3{
     align-items: center;
 }
 /* ---- redes sociales --- */
+.grilla{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    margin: .5rem;
+}
+.grilla > img{
+    width: 200px;
+}
 .instagram{
-    background-color: #6322A4;
-    flex: 1;
+    background-color: #F2F2F2;
 }
 
 
