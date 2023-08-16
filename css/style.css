@@ -11,7 +11,22 @@
 img{
     max-width: 100%;
 }
-
+:root {
+    --theme-color: white;
+    --primary-color: #334155;    
+    --secundary-color: #c3dbc3;
+    --text-color: #383b40;
+    --text-color-inverse: #c6c7ca;
+    --secundary-text-color: #808285;
+    
+    --gray:#F2F2F2;
+    --yellow:#F2D680;
+    --orange:#F3B363;
+    --carrot:#D9763D;
+    --red:#A64521;
+    --beige:#fbf9f6;
+    --rose:#e8ddd0;
+}
 header,
 footer{
     background-color: beige;
@@ -64,15 +79,16 @@ h3{
     align-items: center;
     margin: 1rem; 
 }
-.news{
-    background-color: #F2F2F2;
+/*------ novedades ----------*/
+.expo{
+    background-color: #fbf9f6;
     display: flex;
     justify-content: center;
 }
 .card{
     display: flex;
     justify-content: center;
-    background-color: #F2F2F2;
+    background-color: #fbf9f6;
     border: unset;
 }
 .card-img{
@@ -83,10 +99,19 @@ h3{
 .card-body{
     border: 3px outset gray;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background-color: white;
     min-height: 19rem;
     display: flex;
+    flex-direction: column;
+}
+.card-body-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-body-img > img{
+    width: 60%;
 }
 .card-text > span{
     color: red;
@@ -96,22 +121,31 @@ h3{
     justify-content: center;
     margin-bottom: 1.3rem;
 }
-.card-text{
+/*----------- about -----------*/
+.company{
+    color: #A64521;
+    background-color: #F2F2F2;
+    min-height: 15rem;
     display: flex;
     flex-direction: column;
+    padding: 1.8rem;
+}
+.company-text > h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.company-text span{
+    padding-left: 2rem;
+}
+.company-text > p{
+    padding: 1.5rem 0;
+    line-height: 1.8;    
+}
+.company-img{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-}
-/*----------- about -----------*/
-.about > p{
-    padding: 2rem 0;
-    line-height: 1.5;
-}
-.about > button{
-    background-color: red;
-    color: #F2F2F2;
-    font-weight: 600;
-    width: 30%;
-    padding: 0.7rem;
+    margin-top: 1.2rem;
 }
 /* ------ snacks -------- */
 .banner{
@@ -132,15 +166,10 @@ h3{
     justify-content: center;
     align-items: center;
 }
+/* ---- redes sociales --- */
 .instagram{
     background-color: #6322A4;
     flex: 1;
 }
-.about{
-    color: #A64521;
-    background-color: #F2D680;
-    display: flex;
-    flex-direction: column;
-    padding: 1.8rem;
-}
+
 
