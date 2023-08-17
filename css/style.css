@@ -26,6 +26,7 @@ img{
     --red:#A64521;
     --beige:#fbf9f6;
     --rose:#e8ddd0;
+    --pink: #ecdccd;
 }
 header,
 footer{
@@ -139,7 +140,8 @@ h3{
 }
 .company-text > p{
     padding: 1.5rem 0;
-    line-height: 1.8;    
+    line-height: 1.8;
+    text-align: start;    
 }
 .company-img{
     display: flex;
@@ -149,8 +151,11 @@ h3{
 }
 /* ------ snacks -------- */
 .banner{
-    background-color: #F2D680;
+    min-height: 600px;
     flex: 1;
+}
+.item-cono{
+    background-color: #F2D680;
 }
 .pellet{
     color: #A64521;
@@ -193,18 +198,80 @@ h3{
     padding-top: 2.8rem;
 }
 /* ---- redes sociales --- */
-.grilla{
+.instagram-grilla{
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3px;
     margin: .5rem;
 }
-.grilla > img{
-    width: 200px;
+.instagram-grilla > img{
+    width: 12.5rem;
+    height: 12.5rem;
 }
 .instagram{
     background-color: #F2F2F2;
 }
-
+.instagram-text{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+/*------- communicate --------- */
+.communicate{
+    background-color: #ecdccd;
+    padding: 3.125rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.communicate-text{
+    padding: 0 1rem 0 1rem;
+}
+.communicate-text h2{
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+    font-family: 'Concert One', cursive;
+    color: #A64521;
+}
+/*----- footer ----*/
+.footer-top{
+    background-color: #F2F2F2;
+    padding-top: 1.875rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: row;
+}
+.footer-contact{
+    font-size: 14px;
+    padding: 1rem;
+    width: 50%;
+}
+.footer-contact h2{
+    color: red;
+    font-weight: 600;
+}
+.footer-contact ul{
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer-incalfer{
+    text-align: end;
+    padding: 1rem;
+    width: 50%;
+}
+.footer-bottom{
+    background-color: #F2F2F2;
+}
+.footer-bottom-text > p{
+    font-size: 12px;
+    border-top: 1px solid gray;
+    margin: 0 1rem 0 1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
 
