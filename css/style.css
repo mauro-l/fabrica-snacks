@@ -33,13 +33,6 @@ font-family: 'Rubik', sans-serif;
     --rose:#e8ddd0;
     --pink: #ecdccd;
 }
-/* header{
-    background-color: beige;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
-
 
 .title > h2 ,h3, h1 {
     font-family: 'Concert One', cursive;
@@ -72,7 +65,7 @@ h3{
     font-weight: 400;
     text-align: start;
     font-family: 'Rubik', sans-serif;
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 .hero-banner span{
     color: #A64521;
@@ -81,15 +74,19 @@ h3{
     margin: 1rem;
 }
 /*-----------main-----------*/
-.body{
-    /* width: max-content; */
-    margin: 0;
-}
-.container{
-    width: max-content;
+body{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;    
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
 }
 .hero{
     background-image: url(../img/hero.png);
@@ -117,6 +114,7 @@ h3{
     justify-content: center;
 }
 .news-card{
+    width: 80%;
     display: flex;
     justify-content: center;
     background-color: #fbf9f6;
@@ -386,14 +384,33 @@ h3{
 @media (min-width:768px){    
     .hero-banner{
         align-items: start;
-        padding-left: 20rem;
+    /*  padding-left: 20rem; */
+    }
+    .aboutUs{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .aboutUs-text{
+        max-width: 80%;
+    }
+    .aboutUs-text h2{
+        font-size: 5rem;
+    }    
+    .aboutUs-text p{
+        font-size: 1.4rem;
+    }
+    .aboutUs-img img{
+        width: 400px;
     }
     .product{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .product-card{
-        width: 25rem;
+        width: 28rem;
     }
     .contact-info{
         width: auto;
@@ -406,5 +423,39 @@ h3{
     }
     .contact-tel{
         font-size: 1.5rem;
+    }
+}
+@media(min-width:992px){
+    .banner{
+        display: none;
+    }
+    .hero{
+        height: 40vh;
+    }
+    .news-card{
+        width: 550px;
+    }
+    .sign-text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .sign-img{
+        background-image: radial-gradient(#fbf9f6,#f2f2f2);
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-forms{
+        width: 80%;
+    }
+    .instagram-grilla{
+        display: flex;
+        overflow-x: auto;
     }
 }
