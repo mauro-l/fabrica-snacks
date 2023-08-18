@@ -37,7 +37,6 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 }
 .navbar img{
     max-width: 30%;
@@ -56,7 +55,33 @@ h1{
 h3{
     font-size: 1.5rem;
 }
-
+/* ----- hero banner -----------*/
+.hero-banner{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 3rem;
+    height: 30vh;
+    text-shadow: gray 1px 3px 5px;
+}
+.hero-banner > h2{
+    color: #A64521;
+    font-weight: 400;
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5rem;
+}
+.hero-banner span{
+    color: #A64521;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 1rem;
+}
 /*-----------main-----------*/
 
 .container{
@@ -277,32 +302,7 @@ h3{
     text-align: center;
 }
 /* --------- sobre nosotros --------- */
-.hero-banner{
-    background-image: url(../img/hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    padding: 3rem;
-    height: 30vh;
-    text-shadow: gray 1px 3px 5px;
-}
-.hero-banner > h2{
-    color: #A64521;
-    font-weight: 400;
-    text-align: start;
-    font-family: 'Rubik', sans-serif;
-    font-size: 3.5rem;
-}
-.hero-banner span{
-    color: #A64521;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    margin: 1rem;
-}
+
 .company-content{
     background-image: linear-gradient(#fbf9f6,#f2f2f2);
     display: flex;
@@ -339,4 +339,45 @@ h3{
 .product-card{
     margin: 1rem;
 }
+/*------ contacto --------*/
 
+.contact-container{
+    background-image: radial-gradient(#fbf9f6,#f2f2f2);
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem;
+}
+.contact-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact-info{
+    border-bottom: #334155cc solid 1px;
+}
+.contact-form{
+    padding: 2.3rem 0;
+    border-bottom: #334155cc solid 1px;
+}
+.contact-map{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+/*-------- dejar cv ------- */
+.sign{
+    background-image: radial-gradient(#fbf9f6,#f2f2f2);
+    padding: 3.125rem;
+}
+.sign-text h2{
+    color: #A64521;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.sign-text p{
+    background-color: #F2B263;
+    border-radius: 25% 10%;
+    padding: 2rem;
+}
