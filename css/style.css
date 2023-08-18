@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +10,11 @@
 img{
     max-width: 100%;
 }
+/*
+font-family: 'Concert One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
 :root {
     --theme-color: white;
     --primary-color: #334155;    
@@ -28,10 +32,10 @@ img{
     --rose:#e8ddd0;
     --pink: #ecdccd;
 }
-header,
-footer{
+header{
     background-color: beige;
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -56,7 +60,7 @@ h3{
 /*-----------main-----------*/
 
 .container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     padding: 0;    
@@ -81,23 +85,23 @@ h3{
     margin: 1rem; 
 }
 /*------ novedades ----------*/
-.expo{
+.news{
     background-color: #fbf9f6;
     display: flex;
     justify-content: center;
 }
-.card{
+.news-card{
     display: flex;
     justify-content: center;
     background-color: #fbf9f6;
     border: unset;
 }
-.card-img{
+.news-card-img{
     margin-bottom: -2rem;    
     display: flex;
-    padding-left: 1rem;     
+    padding-left: 1rem;         
 }
-.card-body{
+.news-card-body{
     border: 3px outset gray;
     padding: 2rem;
     margin-bottom: 3rem;
@@ -106,15 +110,15 @@ h3{
     display: flex;
     flex-direction: column;
 }
-.card-body-img{
+.news-card-body-img{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.card-body-img > img{
+.news-card-body-img > img{
     width: 60%;
 }
-.card-text > span{
+.news-card-text > span{
     color: red;
     font-size: 1.3rem;
     font-weight: 600;
@@ -271,5 +275,68 @@ h3{
     margin: 0 1rem 0 1rem;
     padding: 1rem 0;
     text-align: center;
+}
+/* --------- sobre nosotros --------- */
+.hero-banner{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 3rem;
+    height: 30vh;
+    text-shadow: gray 1px 3px 5px;
+}
+.hero-banner > h2{
+    color: #A64521;
+    font-weight: 400;
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.5rem;
+}
+.hero-banner span{
+    color: #A64521;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 1rem;
+}
+.company-content{
+    background-image: linear-gradient(#fbf9f6,#f2f2f2);
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+}
+.company-content h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+.company-text p{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+/*----------producto----------*/
+
+.product{
+    background-image: linear-gradient(#fbf9f6,#f2f2f2);
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 0;
+}
+.product h5{
+    background-color: #334155cc;
+    color: #F2F2F2;
+    text-shadow: #F3B363 1px 1px 2px;
+    font-size: 2.3rem;
+    width: max-content;  
+    border-radius: 10% 25%;
+    padding: .5rem;
+}
+.product-card{
+    margin: 1rem;
 }
 
