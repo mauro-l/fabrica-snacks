@@ -33,7 +33,9 @@ font-family: 'Rubik', sans-serif;
     --rose:#e8ddd0;
     --pink: #ecdccd;
 }
-
+footer{
+    width: 100%;
+}
 /* .title > h2 ,h3, h1 {
     font-family: 'Concert One', cursive;
     font-size: 2rem;
@@ -132,12 +134,9 @@ main{
     justify-content: center;
     padding-left: 1rem;         
 }
-.card-img-top{
-    width: 70%;
-}
 .news-card-body{
     border: 3px outset gray;
-    padding: 5rem;
+    padding: 3rem;
     margin-bottom: 3rem;
     background-color: white;
     min-height: 19rem;
@@ -150,8 +149,8 @@ main{
     justify-content: center;
     margin-top: -3rem;
 }
-.news-card-body-img > img{
-    width: 50%;
+.card-img-top{
+    width: 70%;
 }
 .news-card-text > span{
     color: red;
@@ -408,6 +407,12 @@ main{
         align-items: start;
     /*  padding-left: 20rem; */
     }
+    .news-card-body{
+        padding: 5rem;
+    } 
+    .news-card-body-img > img{
+        width: 50%;
+    }   
     .aboutUs{
         display: flex;
         flex-wrap: wrap;
@@ -454,6 +459,9 @@ main{
     .news-card{
         width: 550px;
     }
+    .news-card-body-img > img{
+        width: 50%;
+    }
     .sign-text{
         display: flex;
         flex-direction: column;
@@ -466,6 +474,11 @@ main{
         display: flex;
         justify-content: center;
         padding: 3rem;
+    }
+    .sign-container{
+        width: 60%;
+        display: flex;
+        justify-content: center;
     }
     .sign-carousel{
         width: 80%;
