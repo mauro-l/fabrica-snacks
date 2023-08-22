@@ -1,0 +1,54 @@
+.news{
+    display: flex;
+    justify-content: center;
+    background-color: #fbf9f6;
+    background-image: linear-gradient(243deg, #fbf9f6, #e8ddd0);
+
+    &-card{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        background-color: transparent;
+        border: unset;
+
+        &__img{
+            display: flex;
+            margin-bottom: -2rem;    
+            justify-content: center;
+            padding-left: 1rem; 
+        }
+
+        &__body{
+            display: flex;
+            flex-direction: column;
+            min-height: 19rem;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            background-color: white;
+            border: 3px outset gray;
+
+            &--img{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: -3rem;
+            }
+        }
+        &__text{
+            font-size: 1.5rem;
+            text-align: center;
+
+            > span{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1.3rem;
+                color: red;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.card-img-top{
+    width: 70%;
+}

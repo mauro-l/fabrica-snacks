@@ -1,0 +1,28 @@
+.hero__banner{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 3rem;
+    height: 30vh;
+    text-shadow: gray 1px 3px 5px;
+
+    >h2 {
+        color: #fe9402;
+        font-weight: 400;
+        text-align: start;
+        font-family: 'Rubik', sans-serif;
+        font-size: 4rem;
+        }
+    
+    >span {
+        color: #fe9402;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        margin: 1rem;
+        }
+}

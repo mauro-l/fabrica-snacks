@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    
-}
-*img{
-    max-width: 100%;
-}
+
 /*
 font-family: 'Concert One', cursive;
 font-family: 'Raleway', sans-serif;
@@ -36,18 +25,7 @@ font-family: 'Rubik', sans-serif;
 footer{
     width: 100%;
 }
-/* .title > h2 ,h3, h1 {
-    font-family: 'Concert One', cursive;
-    font-size: 2rem;
-    color: #f0f0f0;
-    text-shadow:black 2px 4px 5px;
-}
-h1{
-    font-size: 5rem;
-}*/
-h3{
-    font-size: 1.5rem;
-} 
+
 .title-img{
     display: flex;
     flex-direction: column;
@@ -68,14 +46,14 @@ h3{
     text-shadow: gray 1px 3px 5px;
 }
 .hero-banner > h2{
-    color: #A64521;
+    color: #fe9402;
     font-weight: 400;
     text-align: start;
     font-family: 'Rubik', sans-serif;
     font-size: 4rem;
 }
 .hero-banner span{
-    color: #A64521;
+    color: #fe9402;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     margin: 1rem;
@@ -455,6 +433,9 @@ main{
 @media(min-width:992px){
     .banner{
         display: none;
+    }
+    .hero-banner h2{
+        font-size: 7rem;
     }
     .news-card{
         width: 550px;
