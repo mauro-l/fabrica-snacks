@@ -1,0 +1,43 @@
+.footer__top{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.875rem;
+    padding-bottom: 3.125rem;
+
+    &--contact{
+        font-size: 14px;
+        padding: 1rem;
+        width: 50%;
+
+        > h2{
+            color: red;
+            font-weight: 600;
+        }
+
+        > ul{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+    }
+
+    &--incalfer{
+        text-align: end;
+        padding: 1rem;
+        width: 50%;
+    }
+}
+
+.footer__bottom{
+    background-color: #F2F2F2;
+
+    &--text > p{
+        margin: 0 1rem 0 1rem;
+        padding: 1rem 0;
+        font-size: 12px;
+        border-top: 1px solid gray;
+        text-align: center;
+    }
+}

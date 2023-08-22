@@ -1,0 +1,23 @@
+.instagram{
+    background-color: #F2F2F2;
+    
+    &__grilla{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+        margin: .5rem;
+
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+}

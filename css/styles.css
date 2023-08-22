@@ -206,4 +206,80 @@ footer {
 }
 .banner__item--flavor > img {
   padding-top: 2.8rem;
+}
+
+.instagram {
+  background-color: #F2F2F2;
+}
+.instagram__grilla {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  margin: 0.5rem;
+}
+.instagram__grilla > img {
+  width: 100%;
+  height: 100%;
+}
+.instagram__text {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.communicate {
+  background-color: #ecdccd;
+  padding: 3.125rem 0;
+  text-align: center;
+}
+.communicate__text {
+  padding: 0 1rem 0 1rem;
+}
+.communicate__text > h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+  font-family: "Concert One", cursive;
+  color: #A64521;
+}
+
+.footer__top {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.875rem;
+  padding-bottom: 3.125rem;
+}
+.footer__top--contact {
+  font-size: 14px;
+  padding: 1rem;
+  width: 50%;
+}
+.footer__top--contact > h2 {
+  color: red;
+  font-weight: 600;
+}
+.footer__top--contact > ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.footer__top--incalfer {
+  text-align: end;
+  padding: 1rem;
+  width: 50%;
+}
+
+.footer__bottom {
+  background-color: #F2F2F2;
+}
+.footer__bottom--text > p {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem 0;
+  font-size: 12px;
+  border-top: 1px solid gray;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
