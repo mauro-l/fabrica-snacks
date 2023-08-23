@@ -1,0 +1,24 @@
+.product{
+    background-image: linear-gradient(#fbf9f6,#f2f2f2);
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 1rem;   
+
+    > h5{
+        background-color: #334155cc;
+        color: #F2F2F2;
+        text-shadow: #F3B363 1px 1px 2px;
+        font-size: 2.3rem;
+        width: max-content;  
+        border-radius: 10% 25%;
+        padding: .5rem;
+    }
+
+    &__card{
+        margin: 1rem;
+    }
+}
+
+.product__title > h2{
+    font-size: 3.25rem;
+}

@@ -282,4 +282,88 @@ footer {
   font-size: 12px;
   border-top: 1px solid gray;
   text-align: center;
+}
+
+.company__content {
+  background-image: linear-gradient(#fbf9f6, #f2f2f2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 1.3rem;
+}
+.company__content > h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.company__text > p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.product {
+  background-image: linear-gradient(#fbf9f6, #f2f2f2);
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 1rem;
+}
+.product > h5 {
+  background-color: rgba(51, 65, 85, 0.8);
+  color: #F2F2F2;
+  text-shadow: #F3B363 1px 1px 2px;
+  font-size: 2.3rem;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10% 25%;
+  padding: 0.5rem;
+}
+.product__card {
+  margin: 1rem;
+}
+
+.product__title > h2 {
+  font-size: 3.25rem;
+}
+
+.contact-page {
+  background-image: radial-gradient(#fbf9f6, #f2f2f2);
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem;
+}
+.contact-page__info {
+  border-bottom: rgba(51, 65, 85, 0.8) solid 1px;
+}
+.contact-page__info--text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.contact-page__form {
+  padding: 2.3rem 0;
+  border-bottom: rgba(51, 65, 85, 0.8) solid 1px;
+}
+.contact-page__map {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.sign {
+  background-image: radial-gradient(#fbf9f6, #f2f2f2);
+  padding: 3.125rem;
+}
+.sign__text > h2 {
+  color: #A64521;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.sign__text > p {
+  background-color: #F2B263;
+  border-radius: 25% 10%;
+  padding: 2rem;
 }/*# sourceMappingURL=styles.css.map */

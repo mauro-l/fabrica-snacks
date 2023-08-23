@@ -1,0 +1,20 @@
+.sign{
+    background-image: radial-gradient(#fbf9f6,#f2f2f2);
+    padding: 3.125rem;
+
+    &__text{
+         > h2{
+            color: #A64521;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        > p{
+            background-color: #F2B263;
+            border-radius: 25% 10%;
+            padding: 2rem;
+        }
+    }
+        
+}
