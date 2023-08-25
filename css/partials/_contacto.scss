@@ -7,15 +7,43 @@
     &__info{
         border-bottom: #334155cc solid 1px;
 
+        @include tablet{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--tel{
+            @include tablet{
+                font-size: 1.5rem;
+            }
+        }
+
         &--text{
             font-size: 1.2rem;
             font-weight: bold;
+
+            @include tablet{
+                font-size: 3rem;
+            }
         }
     }
 
     &__form{
         padding: 2.3rem 0;
         border-bottom: #334155cc solid 1px;
+
+        &--forms{
+            @include desktop{
+                width: 80%;
+            }
+        }
+
+        @include desktop{
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__map{

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
+
+
+%hero-title {
+    color: #fe9402; 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-align: start;
+    font-size: 4rem;
+
+    > span {            
+        margin: 1rem;
+    }
+}

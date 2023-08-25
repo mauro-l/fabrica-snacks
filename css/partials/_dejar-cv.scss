@@ -18,3 +18,28 @@
     }
         
 }
+
+.carrusel-img{
+    @include desktop{
+        background-image: radial-gradient(#fbf9f6,#f2f2f2);
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    &__container{
+        @include desktop{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--carousel{
+            @include desktop{
+                width: 80%;
+            }
+        }
+    }
+
+
+}

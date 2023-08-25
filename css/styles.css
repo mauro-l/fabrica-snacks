@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -41,7 +42,7 @@ footer {
   width: 100%;
 }
 
-.hero__banner {
+.hero__banner, .hero__banner-lg {
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,18 +55,35 @@ footer {
   height: 30vh;
   text-shadow: gray 1px 3px 5px;
 }
-.hero__banner > h2 {
+@media screen and (min-width: 768px) {
+  .hero__banner, .hero__banner-lg {
+    align-items: start;
+  }
+}
+.hero__banner > h2, .hero__banner-lg > h2, .hero__banner span, .hero__banner-lg span {
   color: #fe9402;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   text-align: start;
-  font-family: "Rubik", sans-serif;
   font-size: 4rem;
 }
-.hero__banner > span {
-  color: #fe9402;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+.hero__banner > h2 > span, .hero__banner-lg > h2 > span, .hero__banner span > span, .hero__banner-lg span > span {
   margin: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .hero__banner > h2, .hero__banner-lg > h2, .hero__banner span, .hero__banner-lg span {
+    font-size: 6.5rem;
+  }
+}
+
+.hero__banner-lg {
+  align-items: start;
+  padding: 1.5rem;
+}
+.hero__banner-lg > h2, .hero__banner-lg span {
+  font-size: 3.2rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .hero__main {
@@ -106,6 +124,11 @@ footer {
   background-color: transparent;
   border: unset;
 }
+@media screen and (min-width: 992px) {
+  .news-card {
+    width: 550px;
+  }
+}
 .news-card__img {
   display: flex;
   margin-bottom: -2rem;
@@ -121,11 +144,26 @@ footer {
   background-color: white;
   border: 3px outset gray;
 }
+@media screen and (min-width: 768px) {
+  .news-card__body {
+    padding: 5rem;
+  }
+}
 .news-card__body--img {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: -3rem;
+}
+@media screen and (min-width: 768px) {
+  .news-card__body--img > img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .news-card__body--img > img {
+    width: 50%;
+  }
 }
 .news-card__text {
   font-size: 1.5rem;
@@ -152,14 +190,36 @@ footer {
   color: #A64521;
   background-color: #f2f2f2;
 }
+@media screen and (min-width: 768px) {
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__text {
+    max-width: 80%;
+  }
+}
 .about-us__text > p {
   padding: 1.5rem 0;
   line-height: 1.8;
   text-align: start;
 }
+@media screen and (min-width: 768px) {
+  .about-us__text > p {
+    font-size: 1.4rem;
+  }
+}
 .about-us__text > h2 {
   font-size: 3.5rem;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .about-us__text > h2 {
+    font-size: 5rem;
+  }
 }
 .about-us__text > span {
   padding-left: 2rem;
@@ -169,6 +229,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin-top: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .about-us__img > img {
+    width: 400px;
+  }
 }
 
 .banner__item--cono {
@@ -208,6 +273,12 @@ footer {
   padding-top: 2.8rem;
 }
 
+@media screen and (min-width: 992px) {
+  .banner-pellet {
+    display: none;
+  }
+}
+
 .instagram {
   background-color: #F2F2F2;
 }
@@ -217,6 +288,12 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 3px;
   margin: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  .instagram__grilla {
+    display: flex;
+    overflow-x: auto;
+  }
 }
 .instagram__grilla > img {
   width: 100%;
@@ -298,10 +375,19 @@ footer {
   font-weight: 400;
   margin-bottom: 1.6rem;
 }
-
-.company__text > p {
+.company__content--text > p {
   font-size: 0.8rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 992px) {
+  .company__content--text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .company__content--text > p {
+    font-size: 1.8rem;
+  }
 }
 
 .product {
@@ -309,6 +395,14 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 3.125rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .product > h5 {
   background-color: rgba(51, 65, 85, 0.8);
@@ -323,9 +417,10 @@ footer {
 .product__card {
   margin: 1rem;
 }
-
-.product__title > h2 {
-  font-size: 3.25rem;
+@media screen and (min-width: 768px) {
+  .product__card {
+    width: 28rem;
+  }
 }
 
 .contact-page {
@@ -337,13 +432,42 @@ footer {
 .contact-page__info {
   border-bottom: rgba(51, 65, 85, 0.8) solid 1px;
 }
+@media screen and (min-width: 768px) {
+  .contact-page__info {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-page__info--tel {
+    font-size: 1.5rem;
+  }
+}
 .contact-page__info--text {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .contact-page__info--text {
+    font-size: 3rem;
+  }
+}
 .contact-page__form {
   padding: 2.3rem 0;
   border-bottom: rgba(51, 65, 85, 0.8) solid 1px;
+}
+@media screen and (min-width: 992px) {
+  .contact-page__form--forms {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-page__form {
+    display: flex;
+    justify-content: center;
+  }
 }
 .contact-page__map {
   display: flex;
@@ -366,4 +490,25 @@ footer {
   background-color: #F2B263;
   border-radius: 25% 10%;
   padding: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .carrusel-img {
+    background-image: radial-gradient(#fbf9f6, #f2f2f2);
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carrusel-img__container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carrusel-img__container--carousel {
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */

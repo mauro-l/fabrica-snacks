@@ -11,6 +11,10 @@
         background-color: transparent;
         border: unset;
 
+        @include desktop {
+            width: 550px;
+        }
+
         &__img{
             display: flex;
             margin-bottom: -2rem;    
@@ -27,11 +31,24 @@
             background-color: white;
             border: 3px outset gray;
 
+            @include tablet {
+                padding: 5rem;
+            }
+
             &--img{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 margin-top: -3rem;
+
+                >img{
+                    @include tablet {
+                        width: 50%;
+                    }
+                    @include desktop{
+                        width: 50%;
+                    }
+                }
             }
         }
         &__text{

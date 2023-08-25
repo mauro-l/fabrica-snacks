@@ -4,6 +4,13 @@
     flex-direction: column;
     padding: 3.125rem 1rem;   
 
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     > h5{
         background-color: #334155cc;
         color: #F2F2F2;
@@ -16,9 +23,10 @@
 
     &__card{
         margin: 1rem;
+
+        @include tablet {
+            width: 28rem;
+        }
     }
 }
 
-.product__title > h2{
-    font-size: 3.25rem;
-}

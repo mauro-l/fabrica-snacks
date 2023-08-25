@@ -12,9 +12,22 @@
         font-weight: 400;
         margin-bottom: 1.6rem;
     }
+
+    &--text{
+        > p{
+            font-size: .8rem;
+            line-height: 1.5;
+        }
+
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            > p{
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
 
-.company__text > p{
-    font-size: .8rem;
-    line-height: 1.5;
-}

@@ -38,5 +38,13 @@
             padding-top: 2.8rem;
         }
     }
+
+}
+
+.banner-pellet{
+
+    @include desktop{
+        display: none;
+    }
 }
 

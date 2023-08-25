@@ -22,126 +22,15 @@ font-family: 'Rubik', sans-serif;
     --rose:#e8ddd0;
     --pink: #ecdccd;
 }
-footer{
-    width: 100%;
-}
 
-.title-img{
-    display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0 0 0.75rem gray);
-}
+
+
 /* ----- hero banner -----------*/
-.hero-banner{
-    background-image: url(../img/hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    padding: 3rem;
-    height: 30vh;
-    text-shadow: gray 1px 3px 5px;
-}
-.hero-banner > h2{
-    color: #fe9402;
-    font-weight: 400;
-    text-align: start;
-    font-family: 'Rubik', sans-serif;
-    font-size: 4rem;
-}
-.hero-banner span{
-    color: #fe9402;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    margin: 1rem;
-}
-/*-----------main-----------*/
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
 
-}
-main{
-    display: flex;
-    flex-direction: column;
-    width: inherit;
-}
-.hero{
-    background-image: url(../img/hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    padding: 3rem;
-    height: 70vh;
-}
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem; 
-}
+/*-----------main-----------*/
+
 /*------ novedades ----------*/
-.news{
-    background-color: #fbf9f6;
-    background-image: linear-gradient(243deg, #fbf9f6, #e8ddd0);
-    display: flex;
-    justify-content: center;
-}
-.news-card{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    border: unset;
-}
-.news-card-img{
-    margin-bottom: -2rem;    
-    display: flex;
-    justify-content: center;
-    padding-left: 1rem;         
-}
-.news-card-body{
-    border: 3px outset gray;
-    padding: 3rem;
-    margin-bottom: 3rem;
-    background-color: white;
-    min-height: 19rem;
-    display: flex;
-    flex-direction: column;
-}
-.news-card-body-img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: -3rem;
-}
-.card-img-top{
-    width: 70%;
-}
-.news-card-text > span{
-    color: red;
-    font-size: 2rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.3rem;
-}
-.news-card-text{
-    font-size: 1.5rem;
-    text-align: center;
-}
+
 /*----------- about -----------*/
 .aboutUs{
     color: #A64521;
@@ -385,13 +274,13 @@ main{
         align-items: start;
     /*  padding-left: 20rem; */
     }
-    .news-card-body{
+    /* .news-card-body{
         padding: 5rem;
     } 
     .news-card-body-img > img{
         width: 50%;
-    }   
-    .aboutUs{
+    }   */ 
+    /* .aboutUs{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -407,8 +296,9 @@ main{
     }
     .aboutUs-img img{
         width: 400px;
-    }
-    .product{
+    } */
+
+    /* .product{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -416,8 +306,8 @@ main{
     }
     .product-card{
         width: 28rem;
-    }
-    .contact-info{
+    } */
+    /* .contact-info{
         width: auto;
         display: flex;
         justify-content: center;
@@ -428,21 +318,21 @@ main{
     }
     .contact-tel{
         font-size: 1.5rem;
-    }
+    } */
 }
 @media(min-width:992px){
     .banner{
         display: none;
     }
-    .hero-banner h2{
+    /* .hero-banner h2{
         font-size: 7rem;
-    }
-    .news-card{
+    } */
+    /* .news-card{
         width: 550px;
     }
     .news-card-body-img > img{
         width: 50%;
-    }
+    } */
     .sign-text{
         display: flex;
         flex-direction: column;
@@ -464,13 +354,13 @@ main{
     .sign-carousel{
         width: 80%;
     }
-    .contact-form{
+    /* .contact-form{
         display: flex;
         justify-content: center;
     }
     .contact-forms{
         width: 80%;
-    }
+    } */
     .instagram-grilla{
         display: flex;
         overflow-x: auto;
