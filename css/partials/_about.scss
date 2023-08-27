@@ -4,7 +4,7 @@
     min-height: 15rem;
     padding: 1.8rem;
     color: #A64521;
-    background-color: #f2f2f2;
+    background-color: $gray;
 
     @include tablet {
         display: flex;
@@ -40,10 +40,15 @@
     } 
    
     &__img{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex(row, center, center);
         margin-top: 1.2rem;
+
+        >h2, span{
+            font-size: 4.5rem;
+            font-family: $fontAssistant;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
 
         > img {
             @include tablet{

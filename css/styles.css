@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap");
+/*
+font-family: 'Concert One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Assistant', sans-serif;
+*/
 * {
   padding: 0;
   margin: 0;
@@ -48,9 +55,9 @@ footer {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 3rem;
   height: 30vh;
   text-shadow: gray 1px 3px 5px;
@@ -84,6 +91,12 @@ footer {
   font-size: 3.2rem;
   margin: 0;
   line-height: 1;
+}
+@media screen and (min-width: 992px) {
+  .hero__banner-lg > h2, .hero__banner-lg span {
+    font-size: 6.5rem;
+    margin: 4rem;
+  }
 }
 
 .hero__main {
@@ -228,7 +241,14 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 1.2rem;
+}
+.about-us__img > h2, .about-us__img span {
+  font-size: 4.5rem;
+  font-family: "Assistant", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .about-us__img > img {
@@ -323,7 +343,7 @@ footer {
 }
 
 .footer__top {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   padding-top: 1.875rem;
@@ -351,7 +371,7 @@ footer {
 }
 
 .footer__bottom {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 .footer__bottom--text > p {
   margin: 0 1rem 0 1rem;
@@ -406,7 +426,7 @@ footer {
 }
 .product > h5 {
   background-color: rgba(51, 65, 85, 0.8);
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-shadow: #F3B363 1px 1px 2px;
   font-size: 2.3rem;
   width: -moz-max-content;

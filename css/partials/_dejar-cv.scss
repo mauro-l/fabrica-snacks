@@ -1,5 +1,5 @@
 .sign{
-    background-image: radial-gradient(#fbf9f6,#f2f2f2);
+    background-image: radial-gradient(#fbf9f6,$gray);
     padding: 3.125rem;
 
     &__text{
@@ -21,7 +21,7 @@
 
 .carrusel-img{
     @include desktop{
-        background-image: radial-gradient(#fbf9f6,#f2f2f2);
+        background-image: radial-gradient(#fbf9f6,$gray);
         display: flex;
         justify-content: center;
         padding: 3rem;

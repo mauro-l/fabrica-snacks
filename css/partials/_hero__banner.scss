@@ -3,10 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
+    @include flex(column, center, center);    
     padding: 3rem;
     height: 30vh;
     text-shadow: gray 1px 3px 5px;
@@ -16,7 +13,7 @@
     }
     
     >h2, span {
-        color: #fe9402; 
+        color: $text-color; 
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
         text-align: start;
@@ -27,7 +24,7 @@
         }
 
         @include desktop{
-            font-size: 6.5rem;
+            font-size: 6.5rem;            
         }
     }
     
@@ -43,6 +40,11 @@
         font-size: 3.2rem;
         margin: 0;
         line-height: 1;
+
+        @include desktop{
+            font-size: 6.5rem;
+            margin: 4rem;
+        }
     }
 
 }
