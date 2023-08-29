@@ -12,7 +12,7 @@ font-family: 'Assistant', sans-serif;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 img {
@@ -200,8 +200,11 @@ footer {
   flex-direction: column;
   min-height: 15rem;
   padding: 1.8rem;
-  color: #A64521;
   background-color: #f2f2f2;
+  background-image: url(../img/bg/bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .about-us {
@@ -219,19 +222,29 @@ footer {
   padding: 1.5rem 0;
   line-height: 1.8;
   text-align: start;
+  color: #777;
 }
 @media screen and (min-width: 768px) {
   .about-us__text > p {
     font-size: 1.4rem;
   }
 }
+.about-us__text > h3 {
+  color: #999;
+  font-size: 1.3rem;
+}
 .about-us__text > h2 {
-  font-size: 3.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #25272a;
+}
+.about-us__text > h2 > span {
+  color: #dc3545;
 }
 @media screen and (min-width: 768px) {
   .about-us__text > h2 {
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 .about-us__text > span {
@@ -239,16 +252,25 @@ footer {
 }
 .about-us__img {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.2rem;
 }
 .about-us__img > h2, .about-us__img span {
-  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #dc3545;
+  font-size: 2.5rem;
   font-family: "Assistant", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+}
+.about-us__img > img {
+  width: 250px;
 }
 @media screen and (min-width: 768px) {
   .about-us__img > img {

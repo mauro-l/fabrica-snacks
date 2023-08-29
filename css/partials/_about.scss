@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     min-height: 15rem;
-    padding: 1.8rem;
-    color: #A64521;
+    padding: 1.8rem;    
     background-color: $gray;
+    background-image: url(../img/bg/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include tablet {
         display: flex;
@@ -21,17 +24,27 @@
             padding: 1.5rem 0;
             line-height: 1.8;
             text-align: start;
+            color: $text-gray;
             
             @include tablet{
                 font-size: 1.4rem;
             }    
         }
+        > h3 {
+            color: #999;
+            font-size: 1.3rem;
+        }
         > h2{
-            font-size: 3.5rem;
-            font-weight: 500;
+            font-size: 2rem;
+            font-weight: 800;
+            color: $text-black;
+            > span{
+                color: $danger;
+            }
             
             @include tablet{
-                font-size: 5rem;
+                font-size: 2rem;
+                font-weight: 700;
             }
         }
         > span{
@@ -40,17 +53,21 @@
     } 
    
     &__img{
-        @include flex(row, center, center);
+        @include flex(column, center, center);
         margin-top: 1.2rem;
-
+        
         >h2, span{
-            font-size: 4.5rem;
+            @include flex (column, center, center);
+            text-align: center;
+            color: $danger;
+            font-size: 2.5rem;
             font-family: $fontAssistant;
             font-weight: 800;
-            text-transform: uppercase;
+            text-transform: uppercase;            
         }
-
-        > img {
+        
+        > img {            
+            width: 250px;
             @include tablet{
                 width: 400px;
             }
