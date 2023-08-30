@@ -42,18 +42,44 @@
                 </article>
             </section>
             <section class="news">
-                <div class="card news-card">
-                    <div class="card-img news-card__img">
-                        <img src="./img/feriasmobile.png" class="card-img-top" alt="logo novedades">
-                    </div>
-                    <div class="card-body news-card__body">
-                        <div class="card-body-img news-card__body--img">
-                           <img src="./img/feria-envase.png" alt="imagen prox ferias">
-                          
+                <article class="news__box"></article>
+                <article class="news__title">
+                    <h3>Novedades</h3>
+                    <h2>¡Enterate de las novedades <span>aquí</span>!</h2>
+                </article>
+                <article class="news__indicator">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                </article>
+                <article class="news-carousel">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="20000">
+                            <div class="news-carousel__body">
+                                <div class="news-carousel__body--img">
+                                    <img src="./img/feria-envase.png" alt="imagen prox ferias">                          
+                                </div>
+                                <div class="new-carousel__body--text">
+                                    <p>Del 3 al 6 de Octubre te esperamos en "Expo Envase" en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
+                                        EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA.</p>
+                                </div>
+                                <div class="new-carousel__body--item">
+                                    <p><span>___</span>Expo Envase, Centro Costa Salguero.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="20000">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
                         </div>
-                        <p class="card-text news-card__text"><span>ENVASE 2023</span>Del 3 al 6 de octubre en el Centro Costa Salguero - Buenos Aires, Argentina.</p>
-                    </div>
-                </div>
+                      </div>
+                </article>
             </section>
             <section class="about-us">
                 <div class="about-us__text">

@@ -126,73 +126,86 @@ footer {
 
 .news {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #fbf9f6;
-  background-image: linear-gradient(243deg, #fbf9f6, #e8ddd0);
+  padding: 1.8rem;
+  background-color: #fff;
+  background-image: url(../img/bg/shape_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.news-card {
+.news__title > h3 {
+  color: #999;
+  font-size: 1.3rem;
+}
+.news__title > h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #25272a;
+}
+.news__title > h2 > span {
+  color: #dc3545;
+}
+@media screen and (min-width: 768px) {
+  .news__title > h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+.news__title > span {
+  padding-left: 2rem;
+}
+.news-carousel {
   display: flex;
   justify-content: center;
-  width: 80%;
+  /*width: 50%;
   background-color: transparent;
-  border: unset;
+  border: unset;*/
 }
 @media screen and (min-width: 992px) {
-  .news-card {
+  .news-carousel {
     width: 550px;
   }
 }
-.news-card__img {
-  display: flex;
-  margin-bottom: -2rem;
-  justify-content: center;
-  padding-left: 1rem;
-}
-.news-card__body {
+.news-carousel__body {
   display: flex;
   flex-direction: column;
-  min-height: 19rem;
+  /*min-height: 19rem;
   padding: 3rem;
   margin-bottom: 3rem;
   background-color: white;
-  border: 3px outset gray;
+  border: 3px outset gray; */
 }
 @media screen and (min-width: 768px) {
-  .news-card__body {
+  .news-carousel__body {
     padding: 5rem;
   }
 }
-.news-card__body--img {
+.news-carousel__body--text > p {
+  padding: 1.5rem 0;
+  line-height: 1.8;
+  text-align: start;
+  color: #dc3545;
+}
+.news-carousel__body--img {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  margin-top: -3rem;
+  align-items: center;
+}
+.news-carousel__body--img > img {
+  width: 70%;
 }
 @media screen and (min-width: 768px) {
-  .news-card__body--img > img {
+  .news-carousel__body--img > img {
     width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
-  .news-card__body--img > img {
+  .news-carousel__body--img > img {
     width: 50%;
   }
-}
-.news-card__text {
-  font-size: 1.5rem;
-  text-align: center;
-}
-.news-card__text > span {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.3rem;
-  color: red;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.card-img-top {
-  width: 70%;
 }
 
 .about-us {
@@ -264,7 +277,7 @@ footer {
   align-items: center;
   text-align: center;
   color: #dc3545;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Assistant", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
