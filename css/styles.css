@@ -23,6 +23,25 @@ h3 {
   font-size: 1.5rem;
 }
 
+main h3 {
+  color: #999;
+  font-size: 1.3rem;
+}
+main h1, main h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #25272a;
+}
+main h1 > span, main h2 > span {
+  color: #dc3545;
+}
+main p {
+  padding: 1.5rem 0;
+  line-height: 1.8;
+  text-align: start;
+  color: #777;
+}
+
 .button-center {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +199,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   margin-top: 2rem;
   height: 65%;
 }
@@ -204,13 +223,6 @@ footer {
   text-align: start;
   color: #777;
 }
-.news-carousel__body--item {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-.news-carousel__body--item span {
-  color: #dc3545;
-}
 
 .bi {
   color: #dc3545;
@@ -222,6 +234,15 @@ footer {
 .next {
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+.item-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+}
+.item-text span {
+  color: #dc3545;
 }
 
 .about-us {
@@ -248,10 +269,10 @@ footer {
   }
 }
 .about-us__text > p {
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0;
   line-height: 1.8;
   text-align: start;
-  color: #777;
+  color: $text-gray; */
 }
 @media screen and (min-width: 768px) {
   .about-us__text > p {
@@ -259,25 +280,22 @@ footer {
   }
 }
 .about-us__text > h3 {
-  color: #999;
-  font-size: 1.3rem;
+  /* color: #999;
+  font-size: 1.3rem; */
 }
-.about-us__text > h2 {
-  font-size: 2rem;
+.about-us__text > h1 {
+  /* font-size: 2rem;
   font-weight: 800;
-  color: #25272a;
-}
-.about-us__text > h2 > span {
-  color: #dc3545;
+  color: $text-black;
+  > span{
+      color: $red;
+  } */
 }
 @media screen and (min-width: 768px) {
-  .about-us__text > h2 {
+  .about-us__text > h1 {
     font-size: 2rem;
     font-weight: 700;
   }
-}
-.about-us__text > span {
-  padding-left: 2rem;
 }
 .about-us__img {
   display: flex;
@@ -307,49 +325,55 @@ footer {
   }
 }
 
-.banner__item--cono {
-  background-color: #F2D680;
-}
-.banner__item--cono-text {
-  color: #A64521;
-  font-size: 3rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-}
-.banner__item--pellet {
-  background-color: #F2B263;
-}
-.banner__item--pellet > p {
-  color: #A64521;
-  font-size: 3rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-}
-.banner__item--flavor {
-  background-color: #D9763D;
-}
-.banner__item--flavor > p {
-  color: #A64521;
-  font-size: 3rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem;
-}
-.banner__item--flavor > img {
-  padding-top: 2.8rem;
+/* .banner__item{
+    &--cono{
+        background-color: #F2D680;
+
+        &-text{
+            color: #A64521;
+            font-size: 3rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem;
+        }
+    }
+    &--pellet{
+        background-color: #F2B263;
+
+        > p{
+            color: #A64521;
+            font-size: 3rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem;
+        }
+    }
+    &--flavor{
+        background-color: #D9763D;
+
+        > p{
+            color: #A64521;
+            font-size: 3rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            padding: 2.5rem;
+        }
+        > img{
+            padding-top: 2.8rem;
+        }
+    }
+
 }
 
-@media screen and (min-width: 992px) {
-  .banner-pellet {
-    display: none;
-  }
-}
+.banner-pellet{
 
+    @include desktop{
+        display: none;
+    }
+} */
 .instagram {
   background-color: #F2F2F2;
 }

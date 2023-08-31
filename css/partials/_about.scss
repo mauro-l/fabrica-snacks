@@ -21,34 +21,31 @@
             max-width: 80%;
         }
         > p{
-            padding: 1.5rem 0;
+            /* padding: 1.5rem 0;
             line-height: 1.8;
             text-align: start;
-            color: $text-gray;
+            color: $text-gray; */
             
             @include tablet{
                 font-size: 1.4rem;
             }    
         }
         > h3 {
-            color: #999;
-            font-size: 1.3rem;
+            /* color: #999;
+            font-size: 1.3rem; */
         }
-        > h2{
-            font-size: 2rem;
+        > h1{
+            /* font-size: 2rem;
             font-weight: 800;
             color: $text-black;
             > span{
                 color: $red;
-            }
+            } */
             
             @include tablet{
                 font-size: 2rem;
                 font-weight: 700;
             }
-        }
-        > span{
-            padding-left: 2rem;
         }
     } 
    

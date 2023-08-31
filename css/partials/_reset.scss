@@ -14,3 +14,26 @@ img{
 h3{
     font-size: 1.5rem;
 }
+
+main{
+    
+    h3 {
+        color: #999;
+        font-size: 1.3rem;
+    }
+    h1, h2{
+        font-size: 2rem;
+        font-weight: 800;
+        color: $text-black;
+        > span{
+            color: $red;
+        }
+    }
+    p{
+        padding: 1.5rem 0;
+        line-height: 1.8;
+        text-align: start;
+        color: $text-gray;
+                  
+    }
+}
