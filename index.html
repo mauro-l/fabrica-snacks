@@ -7,7 +7,8 @@
     <title>Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
@@ -41,49 +42,52 @@
                     </div>
                 </article>
             </section>
-            <section class="news">
-                <article class="news__box"></article>
-                <article class="news__title">
-                    <h3>Novedades</h3>
-                    <h2>¡Enterate de las novedades <span>aquí</span>!</h2>
-                </article>
-                <article class="news__indicator">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                </article>
-                <article class="news-carousel">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="20000">
-                            <div class="news-carousel__body">
-                                <div class="news-carousel__body--img">
-                                    <img src="./img/feria-envase.png" alt="imagen prox ferias">                          
-                                </div>
-                                <div class="new-carousel__body--text">
-                                    <p>Del 3 al 6 de Octubre te esperamos en "Expo Envase" en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
-                                        EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA.</p>
-                                </div>
-                                <div class="new-carousel__body--item">
-                                    <p><span>___</span>Expo Envase, Centro Costa Salguero.</p>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="20000">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                          </div>
+            <section class="container-news">
+                <div class="news">
+                    <article class="news__icon">
+                        <div class="news__icon--box">
+                            <i class="bi bi-megaphone-fill"></i>
                         </div>
-                      </div>
-                </article>
+                    </article>
+                    <article class="news__title">
+                        <h3>Novedades</h3>
+                        <h2>¡Enterate de las novedades <span>aquí</span>!</h2>
+                    </article>
+                    <article class="news-carousel">
+                        <div id="carouselExampleInterval" class="carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="news-carousel__body">
+                                    <div class="news-carousel__body--text">
+                                        <p>Del 3 al 6 de Octubre te esperamos en "Expo Envase" en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
+                                            EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA.</p>
+                                    </div>
+                                    <div class="news-carousel__body--item">
+                                        <p><span>>>> </span>Expo Envase, Centro Costa Salguero.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="10000">
+                                <div class="news-carousel__body">
+                                    <div class="news-carousel__body--text">
+                                        <p>Del 27 al 30 de junio nos vemos en Fispal Tecnología 2023, la feria mundialmente reconocida como el 
+                                            mayor evento para las industrias de alimentos y bebidas.</p>
+                                    </div>
+                                    <div class="news-carousel__body--item">
+                                        <p><span>>>> </span>Sao Pablo Expo, San Pablo - Brasil.</p>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                    <img src="./img/feriasmobile.png" alt="imagen titulo2">
+                              </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
             <section class="about-us">
                 <div class="about-us__text">
-                    <!-- <h2>Sobre <br><span>nosotros</span></h2> -->
                     <h3>¿Quienes somos?</h3>
                     <h2>Desarrollamos Pellets <span>Snacks y Sabores.</span></h2>
                     <p>INCALFOOD S.R.L. nace en el 2015, inspirada en acercar a los fabricantes de snacks productos extruidos semielaborados que no se fabricaban en el país.</p>
