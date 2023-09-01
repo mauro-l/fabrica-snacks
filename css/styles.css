@@ -460,6 +460,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contact-page {
   background-image: radial-gradient(#fbf9f6, #f2f2f2);
   display: flex;
