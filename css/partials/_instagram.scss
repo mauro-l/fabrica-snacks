@@ -1,0 +1,41 @@
+.instagram{
+
+    &-text{
+        margin: 1.8rem;
+    }
+
+    &-slider{
+        width: 80vw;
+        height: auto;
+        margin: 1.5rem auto;
+        overflow: hidden;
+
+        &__track{
+            display: flex;
+            animation: scroll 50s linear infinite;
+            -webkit-animation: scroll 50s linear infinite;
+            width: calc(200px * 12);
+
+            &--slide{
+                width: 200px;
+            
+                >img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-animation: translateX(calc(-200px * 6));
+        transform: translateX(calc(-200px * 6));
+    }
+}

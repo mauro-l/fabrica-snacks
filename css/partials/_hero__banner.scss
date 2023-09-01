@@ -1,0 +1,51 @@
+.hero__banner {
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex(column, center, center);    
+    padding: 3rem;
+    height: 30vh;
+    text-shadow: gray 1px 3px 5px;
+    
+    @include tablet{
+        align-items: start;
+    }
+    
+    >h2, span {
+        color: $text-color; 
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        text-align: start;
+        font-size: 4rem;
+    
+        > span {            
+            margin: 1rem;
+        }
+
+        @include desktop{
+            font-size: 6.5rem;            
+        }
+    }
+    
+}
+
+.hero__banner-lg{
+    @extend .hero__banner;
+
+    align-items: start;
+    padding: 1.5rem;
+
+    >h2, span{
+        font-size: 3.2rem;
+        margin: 0;
+        line-height: 1;
+
+        @include desktop{
+            font-size: 6.5rem;
+            margin: 4rem;
+        }
+    }
+
+}
+

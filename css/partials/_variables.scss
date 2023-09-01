@@ -1,0 +1,29 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
+/*
+font-family: 'Concert One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Assistant', sans-serif;
+*/
+
+$fontRaleway: 'Raleway', sans-serif;
+$fontRubik: 'Rubik', sans-serif;
+$fontAssistant: 'Assistant', sans-serif;
+
+$text-color: #fe9402;
+$text-black: #25272a;
+$text-gray: #777;
+$gray: #f2f2f2;
+$red: #dc3545;
+
+$blue: #7cacd0;
+$green: #90ce7b;
+$beige: #fdf8db;
+
+@mixin flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}

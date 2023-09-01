@@ -1,0 +1,17 @@
+.communicate{
+    /* background-color: #ecdccd; */
+    background-color: $text-black;
+    padding: 3.125rem 0;
+    text-align: center;
+
+    &__text{
+        padding: 0 1rem 0 1rem;
+
+        > h2 {
+            font-size: 1.5rem;
+            padding-bottom: .8rem;
+            font-family: 'Concert One', cursive;
+            color: $blue;
+        }
+    }
+}
