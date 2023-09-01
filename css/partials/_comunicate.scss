@@ -1,5 +1,6 @@
 .communicate{
-    background-color: #ecdccd;
+    /* background-color: #ecdccd; */
+    background-color: $text-black;
     padding: 3.125rem 0;
     text-align: center;
 
@@ -10,7 +11,7 @@
             font-size: 1.5rem;
             padding-bottom: .8rem;
             font-family: 'Concert One', cursive;
-            color: #A64521;
+            color: $blue;
         }
     }
 }

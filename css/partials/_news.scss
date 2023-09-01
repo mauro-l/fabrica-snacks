@@ -29,36 +29,24 @@
     }
 
     &__title {
-        
-        > h3 {
-            color: #999;
-            font-size: 1.3rem;
-        }
+        display: flex;
+        flex-direction: column;
         > h2{
-            font-size: 2rem;
-            font-weight: 800;
-            color: $text-black;
-            > span{
-                color: $red;
-            }
-            
+            margin-top: 4rem;
             @include tablet{
                 font-size: 2rem;
                 font-weight: 700;
             }
         }
-        > span{
-            padding-left: 2rem;
-        }
     }
 
     &-carousel{
-        @include flex (row, center, start);
-        margin-top: 2rem;
+        @include flex (row, center, flex-start);
+        margin-top: 4rem;
         height: 65%;
         
         @include desktop {
-            width: 550px;
+            max-width: 960px;
         }
 
         &__body{
@@ -73,9 +61,7 @@
 
                 > p {
                     padding: 1.5rem 0;
-                    line-height: 1.8;
-                    text-align: start;
-                    color: $text-gray;                     
+                    line-height: 1.8;                   
                 }
                 
             }
@@ -99,7 +85,7 @@
 .item-text{
     font-size: 1.2rem;
     font-weight: 700;
-    color: #000;
+    color: $text-black;
 
     span{
         color: $red;

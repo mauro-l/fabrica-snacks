@@ -4,14 +4,16 @@
 
     &__text{
          > h2{
-            color: #A64521;
+            color: $text-black;
             font-family: 'Raleway', sans-serif;
             font-size: 1.5rem;
             font-weight: 600;
             line-height: 1.2;
+            margin-bottom: 2rem;
+            text-align: center;
         }
         > p{
-            background-color: #F2B263;
+            background-color: $green;
             border-radius: 25% 10%;
             padding: 2rem;
         }

@@ -22,7 +22,7 @@ main{
         font-size: 1.3rem;
     }
     h1, h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 800;
         color: $text-black;
         > span{
@@ -30,7 +30,6 @@ main{
         }
     }
     p{
-        padding: 1.5rem 0;
         line-height: 1.8;
         text-align: start;
         color: $text-gray;

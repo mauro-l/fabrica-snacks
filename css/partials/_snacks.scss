@@ -1,50 +1,29 @@
-/* .banner__item{
-    &--cono{
-        background-color: #F2D680;
-        
-        &-text{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-    }
-    &--pellet{
-        background-color: #F2B263;
+.snacks{
+    color: #fff;
+    background-image: url(../img/bg/bg_10.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center top;
 
-        > p{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-    }
-    &--flavor{
-        background-color: #D9763D;
+    &-cnt{    
+        @include flex (column, center, center);
+        margin: 1.8rem;
 
-        > p{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-        > img{
-            padding-top: 2.8rem;
-        }
-    }
+    }  
 
 }
 
-.banner-pellet{
+.card{
+    border-radius: unset;
+    margin: 1rem auto;
+    line-height: 1.5;
+    width: 20rem;
 
-    @include desktop{
-        display: none;
+    >btn{
+        background-color: $blue;
     }
-} */
-
+    
+    >img{
+        border-radius: unset;
+    }
+}

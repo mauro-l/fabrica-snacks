@@ -28,7 +28,7 @@ main h3 {
   font-size: 1.3rem;
 }
 main h1, main h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #25272a;
 }
@@ -36,7 +36,6 @@ main h1 > span, main h2 > span {
   color: #dc3545;
 }
 main p {
-  padding: 1.5rem 0;
   line-height: 1.8;
   text-align: start;
   color: #777;
@@ -174,17 +173,12 @@ footer {
   margin: 0;
   padding: 0;
 }
-.news__title > h3 {
-  color: #999;
-  font-size: 1.3rem;
+.news__title {
+  display: flex;
+  flex-direction: column;
 }
 .news__title > h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #25272a;
-}
-.news__title > h2 > span {
-  color: #dc3545;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 768px) {
   .news__title > h2 {
@@ -192,20 +186,17 @@ footer {
     font-weight: 700;
   }
 }
-.news__title > span {
-  padding-left: 2rem;
-}
 .news-carousel {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 4rem;
   height: 65%;
 }
 @media screen and (min-width: 992px) {
   .news-carousel {
-    width: 550px;
+    max-width: 960px;
   }
 }
 .news-carousel__body {
@@ -220,8 +211,6 @@ footer {
 .news-carousel__body--text > p {
   padding: 1.5rem 0;
   line-height: 1.8;
-  text-align: start;
-  color: #777;
 }
 
 .bi {
@@ -239,7 +228,7 @@ footer {
 .item-text {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000;
+  color: #25272a;
 }
 .item-text span {
   color: #dc3545;
@@ -269,27 +258,12 @@ footer {
   }
 }
 .about-us__text > p {
-  /* padding: 1.5rem 0;
-  line-height: 1.8;
-  text-align: start;
-  color: $text-gray; */
+  padding: 1.5rem 0;
 }
 @media screen and (min-width: 768px) {
   .about-us__text > p {
     font-size: 1.4rem;
   }
-}
-.about-us__text > h3 {
-  /* color: #999;
-  font-size: 1.3rem; */
-}
-.about-us__text > h1 {
-  /* font-size: 2rem;
-  font-weight: 800;
-  color: $text-black;
-  > span{
-      color: $red;
-  } */
 }
 @media screen and (min-width: 768px) {
   .about-us__text > h1 {
@@ -310,7 +284,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #dc3545;
+  color: #7cacd0;
   font-size: 3rem;
   font-family: "Assistant", sans-serif;
   font-weight: 800;
@@ -325,85 +299,69 @@ footer {
   }
 }
 
-/* .banner__item{
-    &--cono{
-        background-color: #F2D680;
-
-        &-text{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-    }
-    &--pellet{
-        background-color: #F2B263;
-
-        > p{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-    }
-    &--flavor{
-        background-color: #D9763D;
-
-        > p{
-            color: #A64521;
-            font-size: 3rem;
-            font-weight: 600;
-            display: flex;
-            flex-direction: column;
-            padding: 2.5rem;
-        }
-        > img{
-            padding-top: 2.8rem;
-        }
-    }
-
+.snacks {
+  color: #fff;
+  background-image: url(../img/bg/bg_10.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: center top;
+}
+.snacks-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem;
 }
 
-.banner-pellet{
+.card {
+  border-radius: unset;
+  margin: 1rem auto;
+  line-height: 1.5;
+  width: 20rem;
+}
+.card > btn {
+  background-color: #7cacd0;
+}
+.card > img {
+  border-radius: unset;
+}
 
-    @include desktop{
-        display: none;
-    }
-} */
-.instagram {
-  background-color: #F2F2F2;
+.instagram-text {
+  margin: 1.8rem;
 }
-.instagram__grilla {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px;
-  margin: 0.5rem;
+.instagram-slider {
+  width: 80vw;
+  height: auto;
+  margin: 1.5rem auto;
+  overflow: hidden;
 }
-@media screen and (min-width: 992px) {
-  .instagram__grilla {
-    display: flex;
-    overflow-x: auto;
+.instagram-slider__track {
+  display: flex;
+  animation: scroll 50s linear infinite;
+  -webkit-animation: scroll 50s linear infinite;
+  width: 2400px;
+}
+.instagram-slider__track--slide {
+  width: 200px;
+}
+.instagram-slider__track--slide > img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-animation: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-animation: translateX(-1200px);
+    transform: translateX(-1200px);
   }
 }
-.instagram__grilla > img {
-  width: 100%;
-  height: 100%;
-}
-.instagram__text {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-}
-
 .communicate {
-  background-color: #ecdccd;
+  /* background-color: #ecdccd; */
+  background-color: #25272a;
   padding: 3.125rem 0;
   text-align: center;
 }
@@ -414,7 +372,7 @@ footer {
   font-size: 1.5rem;
   padding-bottom: 0.8rem;
   font-family: "Concert One", cursive;
-  color: #A64521;
+  color: #7cacd0;
 }
 
 .footer__top {
@@ -430,8 +388,9 @@ footer {
   width: 50%;
 }
 .footer__top--contact > h2 {
-  color: red;
-  font-weight: 600;
+  font-size: 1.8rem;
+  color: #dc3545;
+  font-weight: 700;
 }
 .footer__top--contact > ul {
   display: flex;
@@ -465,10 +424,11 @@ footer {
   padding: 1.3rem;
 }
 .company__content > h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 1.6rem;
+  color: #7cacd0;
 }
 .company__content--text > p {
   font-size: 0.8rem;
@@ -497,24 +457,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-.product > h5 {
-  background-color: rgba(51, 65, 85, 0.8);
-  color: #f2f2f2;
-  text-shadow: #F3B363 1px 1px 2px;
-  font-size: 2.3rem;
-  width: -moz-max-content;
-  width: max-content;
-  border-radius: 10% 25%;
-  padding: 0.5rem;
-}
-.product__card {
-  margin: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .product__card {
-    width: 28rem;
   }
 }
 
@@ -575,14 +517,16 @@ footer {
   padding: 3.125rem;
 }
 .sign__text > h2 {
-  color: #A64521;
+  color: #25272a;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .sign__text > p {
-  background-color: #F2B263;
+  background-color: #90ce7b;
   border-radius: 25% 10%;
   padding: 2rem;
 }

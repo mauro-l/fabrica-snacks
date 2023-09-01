@@ -21,26 +21,12 @@
             max-width: 80%;
         }
         > p{
-            /* padding: 1.5rem 0;
-            line-height: 1.8;
-            text-align: start;
-            color: $text-gray; */
-            
+            padding: 1.5rem 0;
             @include tablet{
                 font-size: 1.4rem;
             }    
         }
-        > h3 {
-            /* color: #999;
-            font-size: 1.3rem; */
-        }
         > h1{
-            /* font-size: 2rem;
-            font-weight: 800;
-            color: $text-black;
-            > span{
-                color: $red;
-            } */
             
             @include tablet{
                 font-size: 2rem;
@@ -56,7 +42,7 @@
         >h2, span{
             @include flex (column, center, center);
             text-align: center;
-            color: $red;
+            color: $blue;
             font-size: 3rem;
             font-family: $fontAssistant;
             font-weight: 800;

@@ -10,23 +10,5 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    > h5{
-        background-color: #334155cc;
-        color: $gray;
-        text-shadow: #F3B363 1px 1px 2px;
-        font-size: 2.3rem;
-        width: max-content;  
-        border-radius: 10% 25%;
-        padding: .5rem;
-    }
-
-    &__card{
-        margin: 1rem;
-
-        @include tablet {
-            width: 28rem;
-        }
-    }
 }
 
