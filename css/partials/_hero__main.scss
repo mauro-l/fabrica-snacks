@@ -3,13 +3,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
+    @include flex(column, center, center);
     padding: 3rem;
     height: 70vh;
-
+    
+    /* &-ani{
+        position: relative;
+        width: 100%;
+        &--img{
+            >img{
+                width: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    } */
     &-title{
         display: flex;
         flex-direction: column;
@@ -22,5 +31,15 @@
         display: flex;
         flex-direction: column;
         filter: drop-shadow(0 0 0.75rem gray);
+
+        .title-top{
+            animation:rotate-hor-center .9s cubic-bezier(.455,.03,.515,.955) both;
+            @keyframes rotate-diagonal-tl{0%{transform:rotate3d(-1,1,0,0deg);transform-origin:0 0}50%{transform:rotate3d(-1,1,0,180deg);transform-origin:0 0}100%{transform:rotate3d(-1,1,0,360deg);transform-origin:0 0}}
+        }
+        .title-buttom{
+            animation:slide-in-right .7s cubic-bezier(.25,.46,.45,.94) both;
+            @keyframes rotate-hor-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
+        }
+
     }
 }

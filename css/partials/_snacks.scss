@@ -9,6 +9,23 @@
         @include flex (column, center, center);
         margin: 1.8rem;
 
+        &__products{
+            width: 100%;
+            .snacks-card{
+                display: flex;
+                .card{
+                   &-snack-lg{
+                    height: 300px;
+                    order: 5;
+                    background-color: $beige;
+                   }
+                   &-body{
+                    @include flex(column, center, center);
+                   }
+                }
+            }
+        }
+
     }  
 
 }
@@ -19,10 +36,7 @@
     line-height: 1.5;
     width: 20rem;
 
-    >btn{
-        background-color: $blue;
-    }
-    
+        
     >img{
         border-radius: unset;
     }

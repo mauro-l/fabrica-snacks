@@ -123,11 +123,23 @@ footer {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 3rem;
   height: 70vh;
+  /* &-ani{
+      position: relative;
+      width: 100%;
+      &--img{
+          >img{
+              width: 50%;
+              position: absolute;
+              left: 0;
+              top: 0;
+          }
+      }
+  } */
 }
 .hero__main-title {
   display: flex;
@@ -141,6 +153,34 @@ footer {
   flex-direction: column;
   filter: drop-shadow(0 0 0.75rem gray);
 }
+.hero__main-title-img .title-top {
+  animation: rotate-hor-center 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes rotate-diagonal-tl {
+  0% {
+    transform: rotate3d(-1, 1, 0, 0deg);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: rotate3d(-1, 1, 0, 180deg);
+    transform-origin: 0 0;
+  }
+  100% {
+    transform: rotate3d(-1, 1, 0, 360deg);
+    transform-origin: 0 0;
+  }
+}
+.hero__main-title-img .title-buttom {
+  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes rotate-hor-center {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
+}
 
 .container-news {
   height: 65vh;
@@ -149,6 +189,17 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .container-news {
+    height: auto;
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-news {
+    height: 50vh;
+  }
 }
 
 .news {
@@ -173,6 +224,35 @@ footer {
   margin: 0;
   padding: 0;
 }
+.news__icon--box :hover .bi-megaphone-fill {
+  animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes shake-lr {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+@media screen and (min-width: 992px) {
+  .news__icon {
+    width: 926px;
+  }
+}
 .news__title {
   display: flex;
   flex-direction: column;
@@ -196,17 +276,12 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .news-carousel {
-    max-width: 960px;
+    max-width: 926px;
   }
 }
 .news-carousel__body {
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .news-carousel__body {
-    padding: 5rem;
-  }
 }
 .news-carousel__body--text > p {
   padding: 1.5rem 0;
@@ -233,52 +308,62 @@ footer {
 .item-text span {
   color: #dc3545;
 }
+@media screen and (min-width: 992px) {
+  .item-text {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+}
 
-.about-us {
-  display: flex;
-  flex-direction: column;
-  min-height: 15rem;
-  padding: 1.8rem;
+.about-us__cnt {
   background-color: #f2f2f2;
   background-image: url(../img/bg/bg_3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.about-us__cnt .about-us {
+  display: flex;
+  flex-direction: column;
+  min-height: 15rem;
+  margin: 1.8rem;
+}
 @media screen and (min-width: 768px) {
-  .about-us {
+  .about-us__cnt .about-us {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .about-us__text {
+  .about-us__cnt .about-us__text {
     max-width: 80%;
   }
 }
-.about-us__text > p {
+.about-us__cnt .about-us__text > p {
   padding: 1.5rem 0;
 }
 @media screen and (min-width: 768px) {
-  .about-us__text > p {
+  .about-us__cnt .about-us__text > p {
     font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .about-us__text > h1 {
+  .about-us__cnt .about-us__text > h1 {
     font-size: 2rem;
     font-weight: 700;
   }
 }
-.about-us__img {
+.about-us__cnt .about-us__img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.2rem;
 }
-.about-us__img > h2, .about-us__img span {
+.about-us__cnt .about-us__img > h2,
+.about-us__cnt .about-us__img span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,12 +375,20 @@ footer {
   font-weight: 800;
   text-transform: uppercase;
 }
-.about-us__img > img {
+.about-us__cnt .about-us__img > img {
   width: 250px;
 }
 @media screen and (min-width: 768px) {
-  .about-us__img > img {
+  .about-us__cnt .about-us__img > img {
     width: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-us__cnt .about-us__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -313,15 +406,29 @@ footer {
   align-items: center;
   margin: 1.8rem;
 }
+.snacks-cnt__products {
+  width: 100%;
+}
+.snacks-cnt__products .snacks-card {
+  display: flex;
+}
+.snacks-cnt__products .snacks-card .card-snack-lg {
+  height: 300px;
+  order: 5;
+  background-color: #fdf8db;
+}
+.snacks-cnt__products .snacks-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card {
   border-radius: unset;
   margin: 1rem auto;
   line-height: 1.5;
   width: 20rem;
-}
-.card > btn {
-  background-color: #7cacd0;
 }
 .card > img {
   border-radius: unset;
@@ -371,8 +478,9 @@ footer {
 .communicate__text > h2 {
   font-size: 1.5rem;
   padding-bottom: 0.8rem;
-  font-family: "Concert One", cursive;
+  font-family: "Raleway", sans-serif;
   color: #7cacd0;
+  font-weight: 600;
 }
 
 .footer__top {
@@ -460,12 +568,6 @@ footer {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .product {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .contact-page {
   background-image: radial-gradient(#fbf9f6, #f2f2f2);
   display: flex;
@@ -522,6 +624,12 @@ footer {
   background-image: radial-gradient(#fbf9f6, #f2f2f2);
   padding: 3.125rem;
 }
+.sign__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .sign__text > h2 {
   color: #25272a;
   font-family: "Raleway", sans-serif;
@@ -530,6 +638,7 @@ footer {
   line-height: 1.2;
   margin-bottom: 2rem;
   text-align: center;
+  width: 500px;
 }
 .sign__text > p {
   background-color: #90ce7b;

@@ -3,6 +3,7 @@
     padding: 3.125rem;
 
     &__text{
+        @include flex (column, center, center);
          > h2{
             color: $text-black;
             font-family: 'Raleway', sans-serif;
@@ -11,6 +12,7 @@
             line-height: 1.2;
             margin-bottom: 2rem;
             text-align: center;
+            width: 500px;
         }
         > p{
             background-color: $green;

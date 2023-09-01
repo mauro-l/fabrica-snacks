@@ -5,6 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include tablet{
+        height: auto;
+        margin: 2rem;
+    }
+    @include desktop{
+        height: 50vh;
+    }
 }
 
 .news{
@@ -25,6 +33,16 @@
             left: 0;
             margin: 0;
             padding: 0;
+            
+            :hover{
+                .bi-megaphone-fill{
+                    animation:shake-lr .7s cubic-bezier(.455,.03,.515,.955) both;
+                }
+                @keyframes shake-lr{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
+            }
+        }
+        @include desktop{
+            width: 926px;
         }
     }
 
@@ -46,17 +64,13 @@
         height: 65%;
         
         @include desktop {
-            max-width: 960px;
+            max-width: 926px;
         }
 
         &__body{
             display: flex;
             flex-direction: column;
             
-            @include tablet {
-                padding: 5rem;
-            }
-
             &--text {
 
                 > p {
@@ -89,6 +103,11 @@
 
     span{
         color: $red;
+    }
+    @include desktop{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 3rem;
     }
 }
 
