@@ -409,13 +409,17 @@ footer {
 .snacks-cnt__products {
   width: 100%;
 }
-.snacks-cnt__products .snacks-card {
-  display: flex;
+@media screen and (min-width: 992px) {
+  .snacks-cnt__products .snacks-card {
+    display: flex;
+  }
 }
-.snacks-cnt__products .snacks-card .card-snack-lg {
-  height: 300px;
-  order: 5;
-  background-color: #fdf8db;
+@media screen and (min-width: 992px) {
+  .snacks-cnt__products .snacks-card .card-snack-lg {
+    height: 300px;
+    order: 5;
+    background-color: #fdf8db;
+  }
 }
 .snacks-cnt__products .snacks-card .card-body {
   display: flex;

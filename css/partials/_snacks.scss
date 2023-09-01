@@ -12,12 +12,18 @@
         &__products{
             width: 100%;
             .snacks-card{
-                display: flex;
+
+                @include desktop{
+                    display: flex;
+                }
                 .card{
                    &-snack-lg{
-                    height: 300px;
-                    order: 5;
-                    background-color: $beige;
+
+                    @include desktop{
+                        height: 300px;
+                        order: 5;
+                        background-color: $beige;
+                    }
                    }
                    &-body{
                     @include flex(column, center, center);
