@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Incalfood - Pellets y Sabores para Snacks</title>
+    <meta name="description" content="Investigamos y desarrollamos snacks pre-elaborados. Somos Incalfood - Pellets Y Sabores Para Snacks. Pellets de Maíz. Productos Extruidos. Pellets de Trigo.">
+    <meta name="keywords" content="Pellets Y Sabores Para Snacks. Pellets de Maíz. Productos Extruidos. Pellets de Trigo.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
@@ -33,106 +36,175 @@
     </header>
     <main>
         
-            <section class="hero">
-                <article class="title">
-                    <div class="title-img">
-                        <img src="./img/title.png" alt="">
-                        <img src="./img/title2.png" alt="">
+            <section class="hero__main">
+                <article class="hero__main-title">
+                    <div class="hero__main-title-img">
+                        <img src="./img/title.png" alt="imagen titulo Desarrollamos Pellets">
+                        <img src="./img/title2.png" alt="imagen titulo Y sabores">
                     </div>
                 </article>
             </section>
-            <section class="news">
-                <div class="card news-card">
-                    <div class="card-img news-card-img">
-                        <img src="./img/feriasmobile.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body news-card-body">
-                        <div class="card-body-img news-card-body-img">
-                           <img src="./img/feria-envase.png" alt="">
-                          
-                        </div>
-                        <p class="card-text news-card-text"><span>ENVASE 2023</span>Del 3 al 6 de octubre en el Centro Costa Salguero - Buenos Aires, Argentina.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="aboutUs">
-                <div class="aboutUs-text">
-                    <h2>Sobre <br><span>nosotros</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nostrum ducimus, in laborum sapiente distinctio...</p>
+            <section class="about-us">
+                <div class="about-us__text">
+                    <h3>Sobre Nosotros</h3>
+                    <h1>Somos <span>INCALFOOD</span></h1>
+                    <p>Somos una empresa jóven, desde 2015 brindamos a los 
+                        fabricantes de snacks productos extruidos semielaborados que 
+                        no se fabricaban en el país.</p>
                     <div class="button-center">
-                        <a href="./pages/nosotros.html"><button type="button" class="btn btn-danger">Leer más</button></a>                      
+                        <a href="./pages/nosotros.html"><button type="button" class="btn btn-outline-danger">Leer más</button></a>                      
                     </div>
-                    <div class="aboutUs-img">
-                        <img src="./img/Incalfood-Logo-1.png" alt="">
+                    <div class="about-us__img">
+                        <img src="./img/Incalfood-Logo-1.png" alt="logo de la empresa">
+                        <h2>Calidad, inocuidad y autenticidad</h2>
                     </div>
                 </div>
             </section>
-            <section class="banner">
-                <div class="banner-carousel">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active item-cono" data-bs-interval="10000">
-                                <p class="pellet">Pellets <span>a base de maiz</span></p>
-                                <div class="button-center">
-                                    <button type="button" class="btn btn-danger">Leer más</button>
+            <section class="container-news">
+                <div class="news">
+                    <article class="news__icon">
+                        <div class="news__icon--box">
+                            <i class="bi bi-megaphone-fill"></i>
+                        </div>
+                        <div class="news__title">
+                            <h3>Novedades</h3>
+                            <h2>¡Enterate de las novedades <span>aquí</span>!</h2>
+                        </div>
+                    </article>
+                    <article class="news-carousel">
+                        <div id="carouselExampleInterval" class="carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="news-carousel__body">
+                                    <div class="news-carousel__body--text">
+                                        <p>Del 3 al 6 de Octubre te esperamos en "Expo Envase" en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
+                                            EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA.</p>
+                                    </div>
+                                    <div class="news-carousel__body--item">
+                                        <p class="item-text"><span>>>> </span>Expo Envase, Centro Costa Salguero.</p>
+                                    </div>
                                 </div>
-                                <img src="./img/conos.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item item-pellet" data-bs-interval="2000">
-                                <p>Pellets <span>a base de trigo</span></p>
-                                <div class="button-center">
-                                    <button type="button" class="btn btn-danger">Leer más</button>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="10000">
+                                <div class="news-carousel__body">
+                                    <div class="news-carousel__body--text">
+                                        <p>Del 27 al 30 de junio nos vemos en Fispal Tecnología 2023, la feria mundialmente reconocida como el 
+                                            mayor evento para las industrias de alimentos y bebidas.</p>
+                                    </div>
+                                    <div class="news-carousel__body--item">
+                                        <p class="item-text"><span>>>> </span>Sao Pablo Expo, San Pablo - Brasil.</p>
+                                    </div>
                                 </div>
-                                <img src="./img/cascaritas-sinfondo.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item item-flavor">
-                                <p>Sabores para tus snacks!</p>
-                                <div class="button-center">
-                                    <button type="button" class="btn btn-danger">Leer más</button>
-                                </div>
-                                <img src="./img/top-view-colorful-spices-arrangement-sin fondo.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                    <img src="./img/feriasmobile.png" alt="imagen titulo2">
+                              </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    </article>
                 </div>
+            </section>
+            <section class="snacks">
+                <article class="snacks-cnt">
+                    <div class="snacks-cnt__text">
+                        <h3>Productos</h3>
+                        <h2>Conoce nuestra linea de pellets y <span>sabores</span></h2>
+                        <p>Nuestros pellets pre-elaborados son aptos para grandes fabricantes y 
+                                para emprendedores que quieren crear su marca y posicionar 
+                                sus propios snacks.
+                        </p>
+                    </div>
+                    <div class="snacks-cnt__products">
+                        <div class="snacks-card">
+                            <div class="card">
+                                <img src="./img/snacks-product/maiz-product (1).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pellet snack a base de maíz</h5>
+                                  <p class="card-text"> Nuestros pellets, tus snacks! Proba nuestros conitos de maíz, facil de procesar, rapidos de hacer, en solo 25/30s tenes tu snack listo en freidor batch o gastronómico!!!</p>
+                                  <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Incalfood flavours!</h6>
+                                  <h5 class="card-title">Conoce nuestros sabores para tus snacks</h5>
+                                  <p class="card-text">una amplia línea de sabores en polvo para acompañar los pellets.</p>
+                                  <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/snacks-product/trigo-product (1).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Pellet snack a base de trigo</h5>
+                                  <p class="card-text">Ya conocés nuestras cascaritas? Son uno de nuestros pellets favortitos a base de trigo en forma de rectángulos, muy ricos para tus picadas! </p>
+                                  <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </article>
             </section>
             <section class="instagram">
-                <div class="instagram-grilla">
-                    <img src="./img/miniaturas/grupo-personas.PNG" alt="">
-                    <img src="./img/miniaturas/nachos.PNG" alt="">
-                    <img src="./img/miniaturas/plato-pancetitas.PNG" alt="">
-                    <img src="./img/miniaturas/expo-persona.PNG" alt="">
-                    <img src="./img/miniaturas/cajas-produccion.PNG" alt="">
-                    <img src="./img/miniaturas/video-conitos.PNG" alt="">
-                </div>
                 <div class="instagram-text">
-                    <p>Siguenos en instragram</p>
+                    <h3>Instagram</h3>
+                    <h2>Seguinos en Instagram <span>@incalfood.srl</span></h2>
+                </div>
+                <div class="instagram-slider">
+                    <div class="instagram-slider__track">
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/grupo-personas.PNG" alt="ig01">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/nachos.PNG" alt="ig02">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/plato-pancetitas.PNG" alt="ig03">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/expo-persona.PNG" alt="ig04">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/cajas-produccion.PNG" alt="ig05">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/video-conitos.PNG" alt="ig06">
+                        </div>
+    
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/grupo-personas.PNG" alt="ig01">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/nachos.PNG" alt="ig02">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/plato-pancetitas.PNG" alt="ig03">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/expo-persona.PNG" alt="ig04">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/cajas-produccion.PNG" alt="ig05">
+                        </div>
+                        <div class="instagram-slider__track--slide">
+                            <img src="./img/miniaturas/video-conitos.PNG" alt="ig06">
+                        </div>
+                    </div>
                 </div>
             </section>
         
     </main>
     <footer>
         <section class="communicate">
-            <div class="communicate-text">
+            <div class="communicate__text">
                 <h2>¿Desea comunicarse con nosotros?</h2>
                 <div class="button-center">
-                    <a href="./pages/contacto.html"><button type="button" class="btn btn-danger">Contactanos!</button></a>                  
+                    <a href="./pages/contacto.html"><button type="button" class="btn btn-outline-light">Contactanos!</button></a>                  
                 </div>
             </div>
         </section>            
-        <section class="footer-page">
-            <div class="footer-top">
-                <div class="footer-contact">
+        <section class="footer__page">
+            <div class="footer__top">
+                <div class="footer__top--contact">
                     <h2>CONTACTO</h2>
                     <ul>
                         <li>Desde Argentina: <a href="1193989847">11 9398-9847</a></li>
@@ -141,17 +213,17 @@
                         <li>info@incalfood.com</li>
                     </ul>
                 </div>
-                <div class="footer-incalfer">
+                <div class="footer__top--incalfer">
                     <p>¿Interesado en maquinas
                         <br>de proceso de alimentos?
                     </p>
                     <a href="#">
-                        <img src="./img/incalfer.png" alt="">
+                        <img src="./img/incalfer.png" alt="logo incalfer">
                     </a>
                 </div>                
             </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-text">
+            <div class="footer__bottom">
+                <div class="footer__bottom--text">
                     <p>&copy; by Mauro 2023. Todos los derechos reservados.</p>
                 </div>
             </div>

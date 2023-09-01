@@ -1,0 +1,131 @@
+<!-- <div class="card-img news-card__img">
+                        <img src="./img/feriasmobile.png" class="card-img-top" alt="logo novedades">
+                        <div class="card-body news-card__body">
+                            <div class="card-body-img news-card__body--img">
+                                <img src="./img/feria-envase.png" alt="imagen prox ferias">                          
+                            </div>
+                            <p class="card-text news-card__text"><span>ENVASE 2023</span>Del 3 al 6 de octubre en el Centro Costa Salguero - Buenos Aires, Argentina.</p>
+                        </div>
+                    </div> -->
+
+    &-carousel{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        background-color: transparent;
+        border: unset;
+
+        @include desktop {
+            width: 550px;
+        }
+
+        &__img{
+            display: flex;
+            margin-bottom: -2rem;    
+            justify-content: center;
+            padding-left: 1rem; 
+        }
+
+        &__body{
+            display: flex;
+            flex-direction: column;
+            min-height: 19rem;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            background-color: white;
+            border: 3px outset gray;
+
+            @include tablet {
+                padding: 5rem;
+            }
+
+            &--img{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: -3rem;
+
+                >img{
+                    @include tablet {
+                        width: 50%;
+                    }
+                    @include desktop{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        &__text{
+            font-size: 1.5rem;
+            text-align: center;
+
+            > span{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1.3rem;
+                color: red;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+    
+.card-img-top{
+    width: 70%;
+}
+
+Del 3 al 6 de Octubre te esperamos en "Expo Envase" en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
+EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA.
+
+Del 5 al 7 de junio te esperamos en @fithep.expoalimentaria ! 
+La expo de alimentos con todas las novedades de la industria. 
+Más información y acreditaciones visita: www.fithep-expoalimentaria.com.ar
+
+Te invitamos a @expo_envase en su 18º EXPOSICIÓN INTERNACIONAL DEL ENVASE, 
+EMBALAJE, TECNOLOGÍAS Y PROCESOS PARA TODA LA INDUSTRIA. 
+Vení a conocer todo sobre envases y embalajes, 
+procesos y tecnología insumos, servicios y accesorios, 
+máquinas, equipamientos y todo lo que la industria necesita!
+
+Del 3 al 6 de octubre 
+en el Centro Costa Salguero - Buenos Aires, Argentina.
+
+_________
+
+La calidad total es uno de los pilares de Incalfood, 
+desde la selección de la materia prima hasta los procesos 
+de elaboración, en todas las etapas estamos continuamente
+testeando que el producto llegue al final de la cadena en
+su máxima calidad. Invertimos muchas horas y en equipamiento 
+además de cumplir con los estandares ISO más altos.
+
+Conocé más
+
+_________
+
+Te gustaría emprender en el negocio de los snacks? 
+Tenemos todo lo que necesitas para hacer y comercializar 
+tus propios snacks con nuestros pellets pre-elaborados 
+listos para freír y saborizar! Consultanos hoy y 
+recibí asesoramiento:
+
+_________
+
+tenes tu snack listo en freidor batch o gastronómico!!!
+
+Consultanos hoy por nuestra línea de pellets y sabores:
+
+Tenes tu fabrica de alimentos o simplemente queres invertir 
+en el negocio de los snacks? Hoy te contamos que nuestros 
+pellets pre-elaborados son aptos para grandes fabricantes y 
+para emprendedores que quieren crear su marca y posicionar 
+sus propios snacks. No dudes en consultarnos por variedades 
+y valores de nuestros pellets!
+
+_________
+
+Somos una empresa jóven, desde 2015 brindamos a los 
+fabricantes de snacks productos extruidos semielaborados que 
+no se fabricaban en el país.

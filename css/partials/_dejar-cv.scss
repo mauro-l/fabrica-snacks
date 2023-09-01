@@ -1,0 +1,47 @@
+.sign{
+    background-image: radial-gradient(#fbf9f6,$gray);
+    padding: 3.125rem;
+
+    &__text{
+         > h2{
+            color: $text-black;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        > p{
+            background-color: $green;
+            border-radius: 25% 10%;
+            padding: 2rem;
+        }
+    }
+        
+}
+
+.carrusel-img{
+    @include desktop{
+        background-image: radial-gradient(#fbf9f6,$gray);
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    &__container{
+        @include desktop{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--carousel{
+            @include desktop{
+                width: 80%;
+            }
+        }
+    }
+
+
+}

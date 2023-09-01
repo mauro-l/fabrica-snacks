@@ -1,0 +1,21 @@
+.product{
+    background-image: linear-gradient(#fbf9f6,$gray);
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 1rem;   
+
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@include desktop{
+    
+    .product{
+    display: flex;
+    flex-direction: column;
+    }
+}
