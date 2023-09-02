@@ -18,11 +18,23 @@
                 }
                 .card{
                    &-snack-lg{
+                    padding: 1.2rem 0;
+                    background-color: #f95a3f;
+                    
+                    .card-body{
 
+                        .card-title{
+                            padding: .5rem 0;
+                            font-weight: 800;
+                        }
+                        >p, h6, h5{
+                            color: #fff;
+                        }
+                    }
+                    
                     @include desktop{
-                        height: 300px;
+                        max-height: 300px;
                         order: 5;
-                        background-color: $beige;
                     }
                    }
                    &-body{
@@ -40,9 +52,8 @@
     border-radius: unset;
     margin: 1rem auto;
     line-height: 1.5;
-    width: 20rem;
-
-        
+    max-width: 22rem;
+    
     >img{
         border-radius: unset;
     }

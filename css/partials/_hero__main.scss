@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     @include flex(column, center, center);
-    padding: 3rem;
+    padding: 2.3rem;
     height: 70vh;
     
     /* &-ani{
@@ -34,11 +34,12 @@
 
         .title-top{
             animation:rotate-hor-center .9s cubic-bezier(.455,.03,.515,.955) both;
-            @keyframes rotate-diagonal-tl{0%{transform:rotate3d(-1,1,0,0deg);transform-origin:0 0}50%{transform:rotate3d(-1,1,0,180deg);transform-origin:0 0}100%{transform:rotate3d(-1,1,0,360deg);transform-origin:0 0}}
+            @keyframes rotate-hor-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
+        
         }
         .title-buttom{
             animation:slide-in-right .7s cubic-bezier(.25,.46,.45,.94) both;
-            @keyframes rotate-hor-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
+            @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
         }
 
     }

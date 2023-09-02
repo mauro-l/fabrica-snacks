@@ -10,6 +10,10 @@
     
     @include tablet{
         align-items: start;
+        height: 20vh;
+    }
+    @include desktop{
+        height: 35vh;
     }
     
     >h2, span {
@@ -24,7 +28,7 @@
         }
 
         @include desktop{
-            font-size: 6.5rem;            
+            font-size: 6.5rem;    
         }
     }
     

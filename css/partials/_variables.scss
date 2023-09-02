@@ -1,11 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Raleway:wght@300;400;500&family=Rubik:wght@300;400;500&display=swap');
-/*
-font-family: 'Concert One', cursive;
-font-family: 'Raleway', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Assistant', sans-serif;
-*/
+
 
 $fontRaleway: 'Raleway', sans-serif;
 $fontRubik: 'Rubik', sans-serif;
@@ -28,3 +22,6 @@ $beige: #fdf8db;
     align-items: $aling;
 }
 
+
+$primary: #90ce7b;
+$danger: #ff4136;
