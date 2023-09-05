@@ -1,5 +1,5 @@
 .hero__banner {
-    background-image: url(../img/hero.png);
+    background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,8 +18,8 @@
     
     >h2, span {
         color: $text-color; 
-        font-family: 'Rubik', sans-serif;
-        font-weight: 400;
+        font-family: $fontRubik;
+        font-weight: 600;
         text-align: start;
         font-size: 4rem;
     
@@ -28,7 +28,8 @@
         }
 
         @include desktop{
-            font-size: 6.5rem;    
+            font-size: 6.5rem;   
+            color: #fff 
         }
     }
     

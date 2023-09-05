@@ -22,6 +22,7 @@
 
             @include tablet {
                 max-width: 80%;
+                margin: 0 auto;
             }
 
             >p {
@@ -49,7 +50,8 @@
             span {
                 @include flex (column, center, center);
                 text-align: center;
-                color: $blue;
+                color: $text-black;
+                text-shadow: $text-gray 1px 3px 5px;
                 font-size: 3rem;
                 font-family: $fontAssistant;
                 font-weight: 800;

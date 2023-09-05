@@ -9,13 +9,22 @@
         @include flex (column, center, center);
         margin: 1.8rem;
 
+        &__text{
+            @include desktop{
+                width: 80%;
+            }
+        }
+
         &__products{
             width: 100%;
-            .snacks-card{
+            @include desktop{
+                width: 80%;
+            }
 
-                @include desktop{
-                    display: flex;
-                }
+            .snacks-card{
+                display: flex;
+                flex-wrap: wrap;
+                
                 .card{
                    &-snack-lg{
                     padding: 1.2rem 0;
@@ -32,7 +41,7 @@
                         }
                     }
                     
-                    @include desktop{
+                    @include tablet {
                         max-height: 300px;
                         order: 5;
                     }
