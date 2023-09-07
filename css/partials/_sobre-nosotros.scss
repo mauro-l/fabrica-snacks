@@ -1,10 +1,11 @@
 .company__content{
     &-top{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, center,center);
         flex-wrap: wrap;
-        align-content: center;
         padding: 1.3rem;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
                 
         > h2{
             font-family: $fontRaleway;
@@ -17,7 +18,7 @@
         &--text{
             > p{
                 font-size: 1rem;
-                line-height: 1.5;
+                line-height: 2;
             }
     
             @include tablet{
@@ -36,7 +37,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $gray;
         >img{
             width: 80%;
             margin-top: -10%;
@@ -60,10 +60,18 @@
     }
     &-bt{
         
+        background-image: url(../img/bg/bg_4.jpg);
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        background-position: center;
         &--mision{
-            padding: 2.3rem 1.8rem;
+            padding:5rem 1.8rem 2.3rem 1.8rem;
             background-color: $gray;
+            background-image: url(../img/bg/bg_4.jpg);
             text-align: center;
+            @include desktop{
+                padding: 2.3rem 1.8rem 0.3rem 1.8rem;
+            }
         }
         &--calidad,
         &--filosofia {
@@ -86,6 +94,11 @@
         }
         &--img{
             margin: 0;
+            @include desktop{
+                display: flex;
+                justify-content: flex-end;
+                
+            }
             img{
                 display: flex;
                 width: 100%;
@@ -95,7 +108,12 @@
                 @include tablet{
                     width: 80%;
                     display: flex;
-                    margin: 2rem auto;
+                    padding: 2rem 0;
+                    margin: 0 auto;
+                }
+                @include desktop{
+                    margin: 0;
+                    padding: 0;
                 }
             } 
         }
@@ -116,9 +134,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            padding: 4rem 0;
 
             .stand-feria{
                 grid-column: 2;
+                @include tablet{
+                    display: flex;
+                    justify-content: flex-start;
+                }
             }
             &--filosofia{
                 grid-column: 1;

@@ -34,6 +34,25 @@ main p {
   color: #777;
 }
 
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    width: 80%;
+  }
+  .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-nav {
+    gap: 3rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+.navbar-nav {
+  --bs-nav-link-color: #25272a;
+  --bs-nav-link-hover-color: #dc3545;
+  --bs-navbar-active-color:#35489e;
+}
+
 .button-center {
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +340,7 @@ footer {
   line-height: 1.8;
 }
 
-.bi {
+.bi-megaphone-fill {
   color: #dc3545;
   font-size: 3rem;
   position: absolute;
@@ -552,6 +571,22 @@ footer {
   color: #7cacd0;
   font-weight: 600;
 }
+.communicate__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+}
+.communicate__social .bi-social {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+}
+.communicate__social .bi-social:hover {
+  color: #dc3545;
+}
 
 .footer__top {
   background-color: #f2f2f2;
@@ -596,9 +631,13 @@ footer {
 .company__content-top {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  align-content: center;
   padding: 1.3rem;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 .company__content-top > h2 {
   font-family: "Raleway", sans-serif;
@@ -609,7 +648,7 @@ footer {
 }
 .company__content-top--text > p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
 }
 @media screen and (min-width: 768px) {
   .company__content-top--text {
@@ -626,7 +665,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
 }
 .company__content-img > img {
   width: 80%;
@@ -653,10 +691,22 @@ footer {
     background-color: #fff;
   }
 }
+.company__content-bt {
+  background-image: url(../img/bg/bg_4.jpg);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-position: center;
+}
 .company__content-bt--mision {
-  padding: 2.3rem 1.8rem;
+  padding: 5rem 1.8rem 2.3rem 1.8rem;
   background-color: #f2f2f2;
+  background-image: url(../img/bg/bg_4.jpg);
   text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .company__content-bt--mision {
+    padding: 2.3rem 1.8rem 0.3rem 1.8rem;
+  }
 }
 .company__content-bt--calidad, .company__content-bt--filosofia {
   padding: 1.8rem;
@@ -677,6 +727,12 @@ footer {
 .company__content-bt--img {
   margin: 0;
 }
+@media screen and (min-width: 992px) {
+  .company__content-bt--img {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 .company__content-bt--img img {
   display: flex;
   width: 100%;
@@ -687,7 +743,14 @@ footer {
   .company__content-bt--img img {
     width: 80%;
     display: flex;
-    margin: 2rem auto;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .company__content-bt--img img {
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -695,6 +758,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 4rem 0;
   }
   .company__content-bt--filosofia, .company__content-bt--calidad, .company__content-bt--mision {
     display: flex;
@@ -715,6 +779,14 @@ footer {
   .company__content-bt .stand-feria {
     grid-column: 2;
   }
+}
+@media screen and (min-width: 992px) and (min-width: 768px) {
+  .company__content-bt .stand-feria {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 992px) {
   .company__content-bt--filosofia {
     grid-column: 1;
     grid-row: 2;

@@ -14,4 +14,17 @@
             font-weight: 600;            
         }
     }
+    &__social{
+        @include flex(row, center, center);
+        margin: 1rem;
+        gap: 1.3rem;
+        flex-wrap: wrap;
+        .bi-social{
+            color: $gray;
+            font-size: 1.5rem;
+        }
+        .bi-social:hover{
+            color: $red;
+        }
+    }
 }

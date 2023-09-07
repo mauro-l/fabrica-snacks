@@ -1,0 +1,20 @@
+@include desktop{
+
+    .container-fluid{
+        width: 80%;
+    }
+    .navbar-collapse{
+        justify-content: center;
+    }
+    .navbar-nav{
+        gap: 3rem;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}
+
+.navbar-nav {
+    --bs-nav-link-color: #25272a;
+    --bs-nav-link-hover-color: #dc3545;
+    --bs-navbar-active-color:#35489e;
+}
