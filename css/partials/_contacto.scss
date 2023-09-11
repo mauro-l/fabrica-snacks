@@ -1,8 +1,8 @@
 .contact-page{
-    background-image: radial-gradient(#fbf9f6,$gray);
+    /* background-image: radial-gradient(#fbf9f6,$gray); */
     display: flex;
     flex-direction: column;
-    padding: 3.125rem;
+    margin: 3.125rem;
     
     &__icon{
         font-size: 2rem;
@@ -24,38 +24,57 @@
     }
 
     &__info{
+        background-image: url(../img/bg/shape_bg.png);
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: right;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding-bottom: 2rem;
+        border-bottom: #6d6b6cce solid 1px;
 
         &--location,
         &--phone,
         &--email,
         &--social {
             display: flex;
-            gap: 2.3rem;
+            gap: 2.3rem;            
         }
 
         @include tablet{
-            width: auto;
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            margin: 0 auto;
-        }
-
-        @include desktop{
-            display: flex;
-            flex-direction: row;
+            @include flex(row, space-evenly, center);
+            height: 35vh;
+            padding: 0;
 
             &--location,
             &--phone,
             &--email,
             &--social {
-            display: flex;
-            flex-direction: column;
-            gap: 2.3rem;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: start;
+            }
+            .contact-page__text{
+               text-align: center;
+            }
+        }
+
+        @include desktop{
+            background-position: left top;
+
+            &--location,
+            &--phone,
+            &--email,
+            &--social {
+                height: 50%;
+                @include flex(row, center, flex-start);
+            }
+            .contact-page__icon{
+                font-size: 3rem;
             }
         }
 
@@ -75,11 +94,69 @@
         }
     }
     
+    &__form{
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        &--cnt{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @include desktop{
+                width: 60%;
+                margin: 3rem auto;
+            }
+            label{
+                color: $text-black;
+                font-size: 15px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 1rem 0;
+            }
+            input{
+                margin: 0.5rem 0;
+                display: flex;
+                color: #6d6b6c;
+                border: 1px dashed #ccc;
+                border-radius: 3px;
+                height: 45px;
+                width: 100%;
+                &:hover{
+                    border: 1px dashed #333;
+                    border-radius: 3px;
+                }
+                &:focus-visible {
+                    outline: 2px none;
+                    border-radius: 3px;
+                }
+            }
+            select{
+                @extend input;
+            } 
+            textarea{
+                width: 100%;
+                height: 100px;
+                @extend input;
+            }   
+        }
+    }
+
     &__map{
-        border-top: #334155cc solid 1px;
+        border-top: #6d6b6cce solid 1px;
         display: flex;
         justify-content: center;
         padding: 1rem 0;
+        iframe{
+        width: 350px;
+        height: 400px;
+
+        @include desktop{
+            width: 60%;
+            height: 600px;
+        }
+        }
     }
 
 }

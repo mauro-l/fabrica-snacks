@@ -13,7 +13,7 @@
   <meta name="keywords"
     content="Pellets Y Sabores Para Snacks. Pellets de Maíz. Productos Extruidos. Pellets de Trigo.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -51,15 +51,21 @@
       <section class="contact-page__info">
         <article class="contact-page__info--location">
           <div class="contact-page__icon"><i class="bi bi-geo-alt"></i></div>
-          <div class="contact-page__text"><p>Parque Industrial Hudson <br> Buenos Aires, Argentina.</p></div>
+          <div class="contact-page__text">
+            <p>Parque Industrial Hudson <br> Buenos Aires, Argentina.</p>
+          </div>
         </article>
         <article class="contact-page__info--phone">
           <div class="contact-page__icon"><i class="bi bi-telephone"></i></div>
-          <div class="contact-page__text"><p>Desde Argentina: 11 9398-9847<br>Desde el exterior: +5411 9398-9847</p></div>
+          <div class="contact-page__text">
+            <p>Desde Argentina: 11 9398-9847<br>Desde el exterior: +5411 9398-9847</p>
+          </div>
         </article>
         <article class="contact-page__info--email">
           <div class="contact-page__icon"><i class="bi bi-envelope"></i></div>
-          <div class="contact-page__text"><p>email: <br> info@incalfood.com</p></div>
+          <div class="contact-page__text">
+            <p>info@incalfood.com</p>
+          </div>
         </article>
         <article class="contact-page__info--social">
           <div class="contact-page__icon"><i class="bi bi-share"></i></div>
@@ -70,10 +76,41 @@
           </div>
         </article>
       </section>
-      <section class="contact-page__map"><iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13104.268467003114!2d-58.17543389498972!3d-34.80425325755544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f217aa31769%3A0xee1732fa0c41e70c!2sMaritimo%2C%20Guillermo%20Enrique%20Hudson%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1692320278592!5m2!1ses!2sar"
-        width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="contact-page__form">
+        <div class="contact-page__form--cnt">
+          <form>
+            <label for="Nombre">
+              Nombre
+              <input type="text" id="Nombre" placeholder="First Name">
+            </label>
+            <label for="Apellido">
+              Apellido
+              <input type="text" id="Nombre" placeholder="Last Name">
+            </label>
+            <label for="email">
+              Email 
+              <input type="email" id="email" placeholder="Email Address">
+            </label>
+            <label for="Telefono">
+              Teléfono
+              <input type="tel" id="Telefono" placeholder="Phone">
+            </label>
+            <label for="pais">
+              País
+              <input type="text" id="pais" placeholder="Country">
+            </label>
+            <label for="pais">
+              Provincia
+              <input type="text" id="pais">
+            </label>
+            <label for="comentario">
+              Escriba comentarios aquí:
+              <textarea name="comentarios" id="comentario" placeholder="Comments"></textarea>
+            </label>
+          </form>
+        </div>
+      </section>
+      <section class="contact-page__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13104.805547871554!2d-58.17466503211364!3d-34.80087491998044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d8053e06c501%3A0xfdb78511c095bb9e!2sParque%20Pereyra%20Iraola!5e0!3m2!1ses!2sar!4v1694399274160!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </div>
   </main>
