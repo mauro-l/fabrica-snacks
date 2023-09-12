@@ -1,69 +1,59 @@
-.snacks{
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+
+.snacks {
     color: #fff;
     background-image: url(../img/bg/bg_10.jpg);
     background-repeat: no-repeat;
     background-size: 100% 90%;
     background-position: center top;
 
-    &-cnt{    
+    &-cnt {
         @include flex (column, center, center);
         margin: 1.8rem;
 
-        &__text{
-            @include desktop{
+        &__text {
+            @include desktop {
                 width: 80%;
             }
         }
 
-        &__products{
+        &__products {
             width: 100%;
-            @include desktop{
+
+            @include desktop {
                 width: 80%;
             }
 
-            .snacks-card{
-                display: flex;
-                flex-wrap: wrap;
-                
-                .card{
-                   &-snack-lg{
-                    padding: 1.2rem 0;
-                    background-color: #f95a3f;
-                    
-                    .card-body{
 
-                        .card-title{
-                            padding: .5rem 0;
-                            font-weight: 800;
-                        }
-                        >p, h6, h5{
-                            color: #fff;
-                        }
-                    }
-                    
-                    @include tablet {
-                        max-height: 300px;
-                        order: 5;
-                    }
-                   }
-                   &-body{
+
+            .card {
+                border-radius: unset;
+                margin: 1rem auto;
+                line-height: 1.5;
+                max-width: 22rem;
+
+                >img {
+                    border-radius: unset;
+                }
+
+                &-body {
                     @include flex(column, center, center);
-                   }
+                    height: 17em;
                 }
             }
+
         }
 
-    }  
-
-}
-
-.card{
-    border-radius: unset;
-    margin: 1rem auto;
-    line-height: 1.5;
-    max-width: 22rem;
-    
-    >img{
-        border-radius: unset;
     }
+
 }

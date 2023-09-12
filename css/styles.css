@@ -33,6 +33,11 @@ main p {
   text-align: start;
   color: #777;
 }
+@media screen and (min-width: 768px) {
+  main p {
+    font-size: 1.125rem;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .container-fluid {
@@ -445,6 +450,18 @@ footer {
   }
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+}
+
 .snacks {
   color: #fff;
   background-image: url(../img/bg/bg_10.jpg);
@@ -472,42 +489,21 @@ footer {
     width: 80%;
   }
 }
-.snacks-cnt__products .snacks-card {
-  display: flex;
-  flex-wrap: wrap;
-}
-.snacks-cnt__products .snacks-card .card-snack-lg {
-  padding: 1.2rem 0;
-  background-color: #f95a3f;
-}
-.snacks-cnt__products .snacks-card .card-snack-lg .card-body .card-title {
-  padding: 0.5rem 0;
-  font-weight: 800;
-}
-.snacks-cnt__products .snacks-card .card-snack-lg .card-body > p, .snacks-cnt__products .snacks-card .card-snack-lg .card-body h6, .snacks-cnt__products .snacks-card .card-snack-lg .card-body h5 {
-  color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .snacks-cnt__products .snacks-card .card-snack-lg {
-    max-height: 300px;
-    order: 5;
-  }
-}
-.snacks-cnt__products .snacks-card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
+.snacks-cnt__products .card {
   border-radius: unset;
   margin: 1rem auto;
   line-height: 1.5;
   max-width: 22rem;
 }
-.card > img {
+.snacks-cnt__products .card > img {
   border-radius: unset;
+}
+.snacks-cnt__products .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 17em;
 }
 
 @media screen and (min-width: 992px) {
@@ -635,7 +631,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   padding: 1.3rem;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
@@ -693,8 +689,6 @@ footer {
 }
 .company__content-bt {
   background-image: url(../img/bg/bg_4.jpg);
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   background-position: center;
 }
 .company__content-bt--mision {
@@ -864,7 +858,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
   }
   .contact-page__info .contact-page__text {
     text-align: center;

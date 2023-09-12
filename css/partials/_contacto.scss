@@ -56,7 +56,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: start;
+                align-items: flex-start;
             }
             .contact-page__text{
                text-align: center;
@@ -95,6 +95,7 @@
     }
     
     &__form{
+
         width: 100%;
         background-color: #fff;
         display: flex;

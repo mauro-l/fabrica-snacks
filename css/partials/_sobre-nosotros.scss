@@ -3,7 +3,7 @@
         @include flex(column, center,center);
         flex-wrap: wrap;
         padding: 1.3rem;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 3rem;
                 
@@ -61,8 +61,6 @@
     &-bt{
         
         background-image: url(../img/bg/bg_4.jpg);
-        /* background-repeat: no-repeat;
-        background-size: cover; */
         background-position: center;
         &--mision{
             padding:5rem 1.8rem 2.3rem 1.8rem;

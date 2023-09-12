@@ -33,6 +33,10 @@ main{
         line-height: 1.8;
         text-align: start;
         color: $text-gray;
+
+        @include tablet {
+            font-size: 1.125rem;
+        }
                   
     }
 }
