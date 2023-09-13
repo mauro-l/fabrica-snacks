@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -47,35 +48,70 @@
         </section>
     </header>
     <main>
-        <section class="product">    
-            <div class="snacks-cnt__products">
-                <div class="snacks-card">
-                    <div class="card">
-                        <img src="../img/snacks-product/maiz-product (1).jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Pellet snack a base de maíz</h5>
-                          <p class="card-text"> Nuestros pellets, tus snacks! Proba nuestros conitos de maíz, facil de procesar, rapidos de hacer, en solo 25/30s tenes tu snack listo en freidor batch o gastronómico!!!</p>
-                          <a href="./productos.html" class="btn btn-primary">Ver más</a>
+        <section class="product">
+            <div class="product-cnt">
+                <article class="product-cnt__box product-maiz">
+                    <a href="../index.html"><picture class="product-cnt__box--top"><img src="../img/productos-fondo/maiz-fondo.jpeg" alt="fondo verde con un maíz."></picture>
+                    <div class="product-cnt__box--title">
+                        <div class="product-cnt__box--title-text">
+                            <h2><span>Maíz</span></h2>
                         </div>
                     </div>
-                    <div class="card card-snack-lg">
-                        <div class="card-body">
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Incalfood flavours!</h6>
-                          <h5 class="card-title">Conoce nuestros sabores para tus snacks</h5>
-                          <p class="card-text">una amplia línea de sabores en polvo para acompañar los pellets.</p>
-                          <a href="./productos.html" class="btn btn-primary">Ver más</a>
+                    </a>
+                    <div class="product__cnt--body">
+                        <div class="swiper mySwiper mySwiper-card">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/maiz-snack/conito.png" alt=""></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/maiz-snack/cono-rojo.png" alt=""></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/maiz-snack/nacho.png" alt=""></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/maiz-snack/planchita.png" alt=""></div>
+                            </div>
+                          </div>
+                    </div>
+                </article>
+                <article class="product-cnt__box product-trigo">
+                    <a href="../index.html"><picture class="product-cnt__box--top"><img src="../img/productos-fondo/trigo-fondo.jpg" alt="fondo beige con hojas trigo."></picture>
+                    <div class="product-cnt__box--title">
+                        <div class="product-cnt__box--title-text">
+                            <h2><span>Trigo</span></h2>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="../img/snacks-product/trigo-product (1).jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Pellet snack a base de trigo</h5>
-                          <p class="card-text">Ya conocés nuestras cascaritas? Son uno de nuestros pellets favortitos a base de trigo en forma de rectángulos, muy ricos para tus picadas! </p>
-                          <a href="./productos.html" class="btn btn-primary">Ver más</a>
+                    </a>
+                    <div class="product__cnt--body">
+                        <div class="swiper mySwiper mySwiper-card">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/trigo-snack/arito.png" alt="pellet crudo de arito"></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/trigo-snack/cascarita.png" alt="pellet crudo de cascarita"></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/trigo-snack/pancetita.png" alt="pellet crudo de pancetita"></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/trigo-snack/rejilla.png" alt="pellet crudo de rejilla"></div>
+                            </div>
+                          </div>
+                    </div>
+                </article>
+                <article class="product-cnt__box product-verdura">
+                    <a href="../index.html"><picture class="product-cnt__box--top"><img src="../img/productos-fondo/verduras-fondo.jpg" alt="fondo rosa con verduras."></picture>
+                    <div class="product-cnt__box--title">
+                        <div class="product-cnt__box--title-text">
+                            <h2><span>Verduras</span></h2>
                         </div>
                     </div>
-                </div>
+                    </a>
+                    <div class="product__cnt--body">
+                        <div class="swiper mySwiper mySwiper-card">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/verduras-snack/papa.png" alt="planchita de papa sin freir."></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/verduras-snack/remolacha.png" alt="planchita de remolacha sin freir."></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/verduras-snack/zapallo.png" alt="planchita de zapallo sin freir."></div>
+                              <div class="swiper-slide slide-card"><img src="../img/snacks-product/productos-item/verduras-snack/espinaca.png" alt="planchita de espinaca sin freir."></div>
+                            </div>
+                          </div>
+                    </div>
+                </article>
             </div>
+        </section>
+        <section class="incalfer">
+        </section>
+        <section class="relacionados">
         </section>
     </main>
     <footer>
@@ -122,6 +158,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper-card", {
+          effect: "cards",
+          grabCursor: true,
+        });
+      </script>
 </body>
 
 </html>
