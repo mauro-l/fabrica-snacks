@@ -1,13 +1,22 @@
-.incalfer{
+.incalfer,
+.incalfer-cnt__banner,
+.fritura-cnt__body,
+.fritura-cnt__body-box--text,
+.fritura-cnt__body--img{
     @include flex(column,center,center);
+}
+.incalfer{
     &-cnt{
         background-image: url(../img/snacks-product/incalfer/banner-incalfer.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: 100%;
+        height: 30vh;
         &__banner{
             padding: 2rem;
+            height: 100%;
+            align-items: flex-start;
             @include tablet{
                 > h2, p{
                     width: 60%;
@@ -19,6 +28,48 @@
             >p{
                 line-height: unset;
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+.fritura{
+    &-cnt{
+        &__body{
+            background-color: #dbdbdb;
+            @include desktop{
+                flex-direction: row;
+            }
+            &-box{
+                display: flex;
+                padding: 2rem;
+                @include desktop{
+                    width: 60%
+                }
+                &--text{
+                    text-align: center;
+                    @include desktop{
+                        margin: 0 3rem;
+                        >p{
+                            text-align: center
+                        }
+                    }
+                }
+            }
+            &--img{   
+                align-items: flex-end;   
+                >img{
+                    width: 100%;
+                    @include tablet{
+                        width: 80%;
+                    }
+                    @include desktop{
+                        width: 100%;
+                    }
+                }          
+                @include desktop{
+                    width: 50%;
+                }
             }
         }
     }

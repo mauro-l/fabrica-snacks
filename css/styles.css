@@ -20,22 +20,32 @@ main h3 {
   color: #999;
   font-size: 1.3rem;
 }
-main h1, main h2 {
+main h2 {
   font-size: 1.8rem;
   font-weight: 800;
   color: #25272a;
 }
-main h1 > span, main h2 > span {
+main h2 > span {
   color: #dc3545;
 }
+@media screen and (min-width: 992px) {
+  main h2 {
+    font-size: 2.3rem;
+  }
+}
 main p {
-  line-height: 1.8;
   text-align: start;
   color: #777;
 }
 @media screen and (min-width: 768px) {
   main p {
+    line-height: 1.8;
     font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main p {
+    font-size: 1.3125rem;
   }
 }
 
@@ -72,6 +82,8 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  max-width: 152.5rem;
+  margin: 0 auto;
 }
 
 main {
@@ -884,21 +896,29 @@ footer {
   background-color: #dc3545;
 }
 
-.incalfer {
+.incalfer,
+.incalfer-cnt__banner,
+.fritura-cnt__body,
+.fritura-cnt__body-box--text,
+.fritura-cnt__body--img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .incalfer-cnt {
   background-image: url(../img/snacks-product/incalfer/banner-incalfer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 30vh;
 }
 .incalfer-cnt__banner {
   padding: 2rem;
+  height: 100%;
+  align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
   .incalfer-cnt__banner > h2, .incalfer-cnt__banner p {
@@ -911,6 +931,56 @@ footer {
 .incalfer-cnt__banner > p {
   line-height: unset;
   font-size: 1rem;
+}
+
+.fritura-cnt__body {
+  background-color: #dbdbdb;
+}
+@media screen and (min-width: 992px) {
+  .fritura-cnt__body {
+    flex-direction: row;
+  }
+}
+.fritura-cnt__body-box {
+  display: flex;
+  padding: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .fritura-cnt__body-box {
+    width: 60%;
+  }
+}
+.fritura-cnt__body-box--text {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .fritura-cnt__body-box--text {
+    margin: 0 3rem;
+  }
+  .fritura-cnt__body-box--text > p {
+    text-align: center;
+  }
+}
+.fritura-cnt__body--img {
+  align-items: flex-end;
+}
+.fritura-cnt__body--img > img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .fritura-cnt__body--img > img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fritura-cnt__body--img > img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fritura-cnt__body--img {
+    width: 50%;
+  }
 }
 
 .contact-page {
