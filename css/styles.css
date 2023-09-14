@@ -884,6 +884,35 @@ footer {
   background-color: #dc3545;
 }
 
+.incalfer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.incalfer-cnt {
+  background-image: url(../img/snacks-product/incalfer/banner-incalfer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.incalfer-cnt__banner {
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .incalfer-cnt__banner > h2, .incalfer-cnt__banner p {
+    width: 60%;
+  }
+}
+.incalfer-cnt__banner > h2 {
+  color: #dc3545;
+}
+.incalfer-cnt__banner > p {
+  line-height: unset;
+  font-size: 1rem;
+}
+
 .contact-page {
   /* background-image: radial-gradient(#fbf9f6,$gray); */
   display: flex;
