@@ -1,3 +1,10 @@
+.container-news,
+.news,
+.news-carousel{
+    @include flex(column,center,center);
+    width: 100%;
+}
+
 .container-news{
     height: 85vh;
     background-color: #fff;
@@ -14,22 +21,23 @@
         height: auto;
     }
     @include desktop{
-        height: 50vh;
+        flex-wrap: wrap;
+        height: unset;
     }
 }
 
 .news{
-    @include flex (column, center, center);
-    margin: 1.8rem;
+    /* @include flex (column, center, center); */
+    padding: 2rem;
     height: 100%;
+    @include desktop{
+        padding: 3rem;
+    }
 
     &__icon{
-        display: flex;
-        flex-direction: column;
         width: 100%;   
         @include desktop{
             width: 80%;
-            flex-direction: row;
         }     
 
         &-cnt{
@@ -69,20 +77,11 @@
                 }
             }
         }
-        @include desktop{
-            width: 926px;
-        }
     }
 
     &__title {
         display: flex;
         flex-direction: column;
-        > h2{
-            @include tablet{
-                font-size: 2rem;
-                font-weight: 700;
-            }
-        }
         @include desktop{
             width: 100%;
             flex-wrap: wrap;
@@ -91,18 +90,17 @@
     }
 
     &-carousel{
-        @include flex (row, center, flex-start);
+        /* @include flex (row, center, flex-start); */
+        align-items: flex-start;
+        padding: 2rem;
         height: 250px;
         
         @include desktop {
             max-width: 926px;
-            height: unset;
+            /* height: unset; */
         }
 
         &__body{
-            display: flex;
-            flex-direction: column;
-            
             &--text {
 
                 > p {

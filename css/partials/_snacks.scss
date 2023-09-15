@@ -49,6 +49,11 @@
                 &-body {
                     @include flex(column, center, center);
                     height: 17em;
+                    @include desktop{
+                        >p{
+                            font-size: 1.1rem;
+                        }
+                    }
                 }
             }
 

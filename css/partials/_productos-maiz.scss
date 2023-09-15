@@ -1,0 +1,60 @@
+.productos{
+    &__snack-item{
+        margin: 0 3.5625rem;
+        border-bottom: 1px solid #ddd;
+        @include tablet{
+            @include flex(row, flex-start, center);
+            margin: 2rem;
+        }
+        @include desktop{
+            justify-content: space-evenly;
+            padding:3rem;
+        }
+        &--crsl{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;    
+            @include tablet{
+                width: 40%;
+                height: 40%;
+                padding: 2rem;
+            }        
+            @include desktop{
+                margin: 0;  
+                width: 30%;
+                height: 30%;              
+            }
+        }
+        &--text{
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            .snack-item--text{
+                >h2{
+                    font-size: 1.325rem;
+                    color: $text-gray;
+                }
+                >p{
+                    color: $text-detail;
+                    font-size: 1rem;
+                    >strong{
+                        text-transform: uppercase;
+                        margin-top: 0.5em;
+                    }
+                }
+                @include desktop{
+                    >h2{
+                        font-size: 1.725em;
+                    }
+                    >p{
+                        font-size: 1.0938rem;   
+                    }
+                }
+            }
+        }
+
+    }
+}
+.planchita{
+    border-bottom: none;
+}
