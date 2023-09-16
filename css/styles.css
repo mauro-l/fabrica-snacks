@@ -1,9 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Permanent+Marker&family=Raleway:wght@300;400;500&family=Signika:wght@300;400;500;600;700&display=swap');
- */
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Nerko+One&family=Raleway:wght@300;400;500&family=Signika:wght@300;400;500;600;700&display=swap");
-/*  @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Caveat+Brush&family=Raleway:wght@300;400;500&family=Signika:wght@300;400;500;600;700&display=swap'); */
-/* $fontTitulo: 'Caveat Brush', cursive; */
-/* $fontTitulo: 'Permanent Marker', cursive; */
 * {
   padding: 0;
   margin: 0;
@@ -115,7 +110,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  height: 30vh;
+  /* height: 30vh; */
   text-shadow: gray 1px 3px 5px;
 }
 @media screen and (min-width: 768px) {
@@ -131,7 +126,7 @@ footer {
 }
 .hero__banner > h1, .hero__banner-lg > h1, .hero__banner span, .hero__banner-lg span {
   color: #fff;
-  font-family: "Nerko One", cursive;
+  font-family: "Nerko One";
   font-weight: 600;
   text-align: start;
   font-size: 4.5rem;
@@ -232,7 +227,7 @@ footer {
 .hero__main-title-img .title-buttom .bt-title,
 .hero__main-title-img .title-buttom h1 {
   text-transform: uppercase;
-  font-family: "Nerko One", cursive;
+  font-family: "Nerko One";
   color: #fff;
   line-height: 4rem;
 }
@@ -265,7 +260,7 @@ footer {
   .hero__main-title-img .title-buttom .bt-title,
   .hero__main-title-img .title-buttom h1 {
     text-transform: uppercase;
-    font-family: "Nerko One", cursive;
+    font-family: "Nerko One";
     color: #fff;
     line-height: 6.3rem;
   }
@@ -1207,6 +1202,10 @@ footer {
     transform-origin: 100% 0;
     opacity: 1;
   }
+}
+
+.flavors-mid {
+  width: 100%;
 }
 
 .flavors-bt {

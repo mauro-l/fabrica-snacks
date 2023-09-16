@@ -5,7 +5,7 @@
     background-position: center;
     @include flex(column, center, center);    
     padding: 3rem;
-    height: 30vh;
+    /* height: 30vh; */
     text-shadow: gray 1px 3px 5px;
     
     @include tablet{
