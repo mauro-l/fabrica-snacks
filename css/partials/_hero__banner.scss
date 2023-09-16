@@ -16,17 +16,16 @@
         height: unset;
     }
     
-    >h2, span {
-        color: $text-color; 
-        font-family: $fontRubik;
+    >h1, span {
+        color: #fff; 
+        font-family: $fontTitulo;
         font-weight: 600;
         text-align: start;
-        font-size: 4rem;
+        font-size: 4.5rem;
     
         > span {            
             margin: 1rem;
         }
-
         @include desktop{
             font-size: 6.5rem;   
             color: #fff 
@@ -41,10 +40,14 @@
     align-items: start;
     padding: 1.5rem;
 
-    >h2, span{
-        font-size: 3.2rem;
+    >h1, 
+    span{
+        font-size: 4rem;
         margin: 0;
         line-height: 1;
+        @include tablet{
+            font-size: 5.2rem;
+        }
 
         @include desktop{
             font-size: 6.5rem;

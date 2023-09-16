@@ -6,19 +6,7 @@
     @include flex(column, center, center);
     padding: 2.3rem;
     height: 70vh;
-    
-    /* &-ani{
-        position: relative;
-        width: 100%;
-        &--img{
-            >img{
-                width: 50%;
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-        }
-    } */
+
     &-title{
         display: flex;
         flex-direction: column;
@@ -30,7 +18,7 @@
     &-title-img{
         display: flex;
         flex-direction: column;
-        filter: drop-shadow(0 0 0.75rem gray);
+        filter: drop-shadow(0 0 0.5rem $text-black);
 
         .title-top{
             animation:rotate-hor-center .9s cubic-bezier(.455,.03,.515,.955) both;
@@ -40,6 +28,59 @@
         .title-buttom{
             animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) 0.8s both;
             @keyframes scale-in-center{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}};
+        }
+        .title-top,
+        .title-buttom{
+            text-align: center;
+            .top-title,
+                .mid-title,
+                .bt-title,
+                h1{
+                    text-transform: uppercase;
+                    font-family: $fontTitulo;
+                    color: #fff;
+                    line-height: 4rem;
+                }
+                .top-title{
+                    font-size: 3rem;
+                }
+                h1{
+                    font-size: 6rem;
+                }
+                .mid-title{
+                    font-size: 3rem;
+                }
+                .bt-title{
+                    margin-top: -.7rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    font-size: 2.3rem;
+                }
+            
+            @include tablet{
+
+                .top-title,
+                .mid-title,
+                .bt-title,
+                h1{
+                    text-transform: uppercase;
+                    font-family: $fontTitulo;
+                    color: #fff;
+                    line-height: 6.3rem;
+                }
+                .top-title{
+                    font-size: 6rem;
+                }
+                h1{
+                    font-size: 9rem;
+                }
+                .mid-title{
+                    font-size: 6rem;
+                }
+                .bt-title{
+                    font-size: 4rem;
+                }
+            } 
         }
 
     }

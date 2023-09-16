@@ -1,3 +1,10 @@
+.company__content-bt,
+.company__content-video,
+.company__content-bt--mision{
+    background-image: url(../img/bg/bg_4.jpg);
+    background-position: center;
+}
+
 .company__content{
     &-top{
         @include flex(column, center,center);
@@ -59,13 +66,9 @@
         }
     }
     &-bt{
-        
-        background-image: url(../img/bg/bg_4.jpg);
-        background-position: center;
         &--mision{
             padding:5rem 1.8rem 2.3rem 1.8rem;
             background-color: $gray;
-            background-image: url(../img/bg/bg_4.jpg);
             text-align: center;
             @include desktop{
                 padding: 2.3rem 1.8rem 0.3rem 1.8rem;
@@ -150,6 +153,12 @@
                 height: 20vh;
             }            
         }
+    }
+    &-video{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 3rem;
     }
 }
 
