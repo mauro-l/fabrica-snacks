@@ -288,7 +288,6 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .hero__main-title-img .title-arrow--img {
-    width: 60%;
     margin: 0 auto;
   }
 }
@@ -297,11 +296,20 @@ footer {
 }
 .hero__main-title-img .title-arrow--img-cono:hover .arrow-maiz--o {
   display: none;
-  transition: 3s;
 }
 .hero__main-title-img .title-arrow--img-cono:hover .arrow-maiz--f {
   display: block;
-  transition: 3s;
+  animation: flip-in-diag-2-tl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes flip-in-diag-2-tl {
+  0% {
+    transform: rotate3d(-1, 1, 0, 80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+    opacity: 1;
+  }
 }
 .hero__main-title-img .title-arrow--img > img {
   width: 200px;
@@ -559,6 +567,7 @@ footer {
   background-position: center;
   background-size: cover;
   width: 300px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 .snacks {
@@ -589,8 +598,7 @@ footer {
   }
 }
 .snacks-cnt__products .card {
-  border-radius: unset;
-  margin: 1rem auto;
+  margin: 0 auto;
   line-height: 1.5;
   max-width: 22rem;
 }
@@ -608,6 +616,16 @@ footer {
   .snacks-cnt__products .card-body > p {
     font-size: 1.1rem;
   }
+}
+@media screen and (min-width: 768px) {
+  .snacks-cnt__products .card-text {
+    line-height: unset;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+}
+.snacks-cnt__products .card-title {
+  padding: 0 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -635,9 +653,9 @@ footer {
 }
 .instagram-slider__track {
   display: flex;
-  animation: scroll 50s linear infinite;
-  -webkit-animation: scroll 50s linear infinite;
-  width: 2400px;
+  animation: scroll 40s linear infinite;
+  width: 2800px;
+  gap: 0 2px;
 }
 .instagram-slider__track--slide {
   width: 200px;
@@ -648,12 +666,10 @@ footer {
 
 @keyframes scroll {
   0% {
-    -webkit-animation: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-animation: translateX(-1200px);
-    transform: translateX(-1200px);
+    transform: translateX(-1400px);
   }
 }
 .communicate {
@@ -921,10 +937,14 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
+.product-cnt--body {
+  max-width: 250px;
+}
 .product-cnt__box {
   /* width: 100%;
   max-width: 21.875rem;
   max-height: 31.25rem; */
+  max-width: 300px;
   margin: 2rem;
   border-radius: 18px;
   border: #f2f2f2 solid 3px;
@@ -971,6 +991,7 @@ footer {
 }
 
 .slide-snack {
+  max-width: 200px;
   text-align: center;
   font-size: 18px;
   background: #f2f2f2;
@@ -986,10 +1007,6 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-}
-
-.slide-snack {
-  width: 60%;
 }
 
 .manteca {
@@ -1226,6 +1243,7 @@ footer {
 
 .flavors-mid {
   width: 100%;
+  filter: drop-shadow(10px 5px 10px #fdf8db) invert(20%);
 }
 
 .flavors-bt {

@@ -7,7 +7,8 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 300px; 
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
 }
 
 .snacks {
@@ -33,12 +34,8 @@
             @include desktop {
                 width: 80%;
             }
-
-
-
             .card {
-                border-radius: unset;
-                margin: 1rem auto;
+                margin: 0 auto;
                 line-height: 1.5;
                 max-width: 22rem;
 
@@ -49,11 +46,24 @@
                 &-body {
                     @include flex(column, center, center);
                     height: 17em;
+                    
                     @include desktop{
                         >p{
                             font-size: 1.1rem;
                         }
                     }
+                   
+                }
+                &-text{
+                    @include tablet{
+                        line-height: unset;
+                        padding: 0 1rem;
+                        font-size: 1rem;
+                    }
+                }
+                &-title{
+                    padding: 0 1rem;
+                    
                 }
             }
 

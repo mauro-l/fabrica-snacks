@@ -11,10 +11,14 @@
         width: 100%;
         @include flex(row, center, center);
         flex-wrap: wrap;
+        &--body{
+            max-width: 250px;
+        }
         &__box{
             /* width: 100%;
             max-width: 21.875rem;
             max-height: 31.25rem; */
+            max-width: 300px;
             margin: 2rem;
             border-radius: 18px;
             border: $gray solid 3px;
@@ -67,6 +71,7 @@
 }
 
 .slide-snack {
+    max-width: 200px;
     text-align: center;
     font-size: 18px;
     background: $gray;
@@ -85,7 +90,7 @@
 }
 
 .slide-snack {
-    width: 60%;
+    
 }
 .manteca{
     background-color: $red;

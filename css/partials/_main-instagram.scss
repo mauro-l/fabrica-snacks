@@ -22,9 +22,9 @@
 
         &__track{
             display: flex;
-            animation: scroll 50s linear infinite;
-            -webkit-animation: scroll 50s linear infinite;
-            width: calc(200px * 12);
+            animation: scroll 40s linear infinite;
+            width: calc(200px * 14);
+            gap: 0 2px;
 
             &--slide{
                 width: 200px;
@@ -40,12 +40,10 @@
 
 @keyframes scroll {
     0% {
-        -webkit-animation: translateX(0);
         transform: translateX(0);
     }
 
     100% {
-        -webkit-animation: translateX(calc(-200px * 6));
-        transform: translateX(calc(-200px * 6));
+        transform: translateX(calc(-200px * 7));
     }
 }
