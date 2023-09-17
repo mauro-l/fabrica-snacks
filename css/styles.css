@@ -12,10 +12,6 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  font-size: 1.5rem;
-}
-
 main h3 {
   color: #999;
   font-size: 1.3rem;
@@ -110,7 +106,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  /* height: 30vh; */
   text-shadow: gray 1px 3px 5px;
 }
 @media screen and (min-width: 768px) {
@@ -127,6 +122,7 @@ footer {
 .hero__banner > h1, .hero__banner-lg > h1, .hero__banner span, .hero__banner-lg span {
   color: #fff;
   font-family: "Nerko One";
+  text-transform: uppercase;
   font-weight: 600;
   text-align: start;
   font-size: 4.5rem;
@@ -166,8 +162,8 @@ footer {
   }
 }
 
-.hero__main {
-  background-image: url(../img/hero.jpg);
+.hero__main,
+.title-arrow--img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -175,14 +171,18 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.hero__main {
+  background-image: url(../img/hero.jpg);
   padding: 2.3rem;
-  height: 70vh;
 }
 .hero__main-title {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: 1rem;
 }
 .hero__main-title-img {
@@ -280,6 +280,31 @@ footer {
   .hero__main-title-img .title-buttom .bt-title {
     font-size: 4rem;
   }
+}
+.hero__main-title-img .title-arrow--img {
+  background-image: url(../img/hero-baner/row/productos-arrow.png);
+  background-size: contain;
+  flex-direction: row;
+}
+@media screen and (min-width: 992px) {
+  .hero__main-title-img .title-arrow--img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.hero__main-title-img .title-arrow--img-cono .arrow-maiz--f {
+  display: none;
+}
+.hero__main-title-img .title-arrow--img-cono:hover .arrow-maiz--o {
+  display: none;
+  transition: 3s;
+}
+.hero__main-title-img .title-arrow--img-cono:hover .arrow-maiz--f {
+  display: block;
+  transition: 3s;
+}
+.hero__main-title-img .title-arrow--img > img {
+  width: 200px;
 }
 
 .container-news,
@@ -457,21 +482,22 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 1.8rem;
 }
 .about-us__cnt .about-us {
   display: flex;
   flex-direction: column;
   min-height: 15rem;
-  margin: 1.8rem;
 }
 @media screen and (min-width: 768px) {
   .about-us__cnt .about-us {
-    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     align-content: center;
+    padding: 3rem 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .about-us__cnt .about-us__text {
     max-width: 80%;
     margin: 0 auto;
@@ -480,15 +506,13 @@ footer {
 .about-us__cnt .about-us__text > p {
   padding: 1.5rem 0;
 }
-@media screen and (min-width: 768px) {
-  .about-us__cnt .about-us__text > p {
-    font-size: 1.4rem;
-  }
+.about-us__cnt .about-us__text > h2 {
+  font-size: 2.3rem;
 }
 @media screen and (min-width: 768px) {
-  .about-us__cnt .about-us__text > h1 {
-    font-size: 2rem;
-    font-weight: 700;
+  .about-us__cnt .about-us__text > h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
   }
 }
 .about-us__cnt .about-us__img {
@@ -498,12 +522,7 @@ footer {
   align-items: center;
   margin-top: 1.2rem;
 }
-.about-us__cnt .about-us__img > h2,
-.about-us__cnt .about-us__img span {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.about-us__cnt .about-us__img > h2 {
   text-align: center;
   color: #25272a;
   text-shadow: #777 1px 3px 5px;
@@ -511,6 +530,7 @@ footer {
   font-family: "Assistant", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  max-width: 90%;
 }
 .about-us__cnt .about-us__img > img {
   width: 250px;
@@ -1256,7 +1276,6 @@ footer {
 }
 
 .contact-page {
-  /* background-image: radial-gradient(#fbf9f6,$gray); */
   display: flex;
   flex-direction: column;
   margin: 3.125rem;
