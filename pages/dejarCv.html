@@ -64,9 +64,45 @@
   </header>
   <main>
     <section class="sign">
-      <div class="sign__text">
-        <h2>¿Deseas formar parte de Incalfood?</h2>
-        <p>Envianos tu CV a <a href="#">administracion@incalfood.com</a></p>
+      <article class="sign__text">
+        <h2>Dejanos tus datos y cv</h2>
+        <!-- <p>Envianos tu CV a <a href="#">administracion@incalfood.com</a></p> -->
+      </article>
+    </section>
+    <section class="frm">
+      <div class="frm__form--cnt">
+        <form>
+          <label for="Nombre">
+            Nombre
+            <input type="text" id="Nombre">
+          </label>
+          <label for="Apellido">
+            Apellido
+            <input type="text" id="Nombre">
+          </label>
+          <label for="email">
+            Email 
+            <input type="email" id="email">
+          </label>
+          <label for="Telefono">
+            Teléfono
+            <input type="tel" id="Telefono">
+          </label>
+          <label for="pais">
+            Puesto en el que te gustaría postular
+            <input type="text" id="pais">
+          </label>
+          <div>
+            CV
+            <div class="frm__cnt">
+              <div class="frm__cnt--box">
+                <div class="frm__cnt--box-icon"><i class="bi bi-arrow-bar-up"></i></div>
+                <div class="frm__cnt--box-text"><p>Arrastra un archivo aquí o haz click para cargar</p></div>
+                <div class="frm__cnt--box-subtext"><p>Tamaño máximo de archivo: 10MB</p></div>
+              </div>
+            </div>
+          </label>
+        </form>
       </div>
     </section>
     <section class="carrusel-img">

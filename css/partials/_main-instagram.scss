@@ -47,3 +47,26 @@
         transform: translateX(calc(-200px * 7));
     }
 }
+
+.img-ig01{
+    transition: .5s;
+}
+.img-ig01:hover{
+    margin: -1rem;
+    filter:brightness(50%);
+}
+.img-ig02{
+    transition: .5s;
+}
+.img-ig02:hover{
+    margin: -1rem;
+    filter: brightness(40%);
+}
+.img-ig04{
+    transition: .5s;
+}
+.img-ig04:hover{
+    margin:-0.5rem;
+    filter: grayscale(50);
+
+}
