@@ -673,33 +673,168 @@ footer {
     transform: translateX(-1400px);
   }
 }
-.img-ig01 {
+.img-ig1 {
   transition: 0.5s;
 }
 
-.img-ig01:hover {
-  margin: -1rem;
-  filter: brightness(50%);
+.img-ig1:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
 }
 
-.img-ig02 {
+.img-ig2 {
   transition: 0.5s;
 }
 
-.img-ig02:hover {
-  margin: -1rem;
-  filter: brightness(40%);
+.img-ig2:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
 }
 
-.img-ig04 {
+.img-ig3 {
   transition: 0.5s;
 }
 
-.img-ig04:hover {
-  margin: -0.5rem;
-  filter: grayscale(50);
+.img-ig3:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
 }
 
+.img-ig4 {
+  transition: 0.5s;
+}
+
+.img-ig4:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig5 {
+  transition: 0.5s;
+}
+
+.img-ig5:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig6 {
+  transition: 0.5s;
+}
+
+.img-ig6:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig7 {
+  transition: 0.5s;
+}
+
+.img-ig7:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig8 {
+  transition: 0.5s;
+}
+
+.img-ig8:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig9 {
+  transition: 0.5s;
+}
+
+.img-ig9:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig10 {
+  transition: 0.5s;
+}
+
+.img-ig10:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig11 {
+  transition: 0.5s;
+}
+
+.img-ig11:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig12 {
+  transition: 0.5s;
+}
+
+.img-ig12:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig13 {
+  transition: 0.5s;
+}
+
+.img-ig13:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+.img-ig14 {
+  transition: 0.5s;
+}
+
+.img-ig14:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+  width: 98%;
+}
+
+/* .img-ig01{
+    transition: .5s;
+}
+.img-ig01:hover{
+    margin: -1rem;
+    filter:brightness(50%);
+}
+.img-ig02{
+    transition: .5s;
+}
+.img-ig02:hover{
+    margin: -1rem;
+    filter: brightness(40%);
+}
+.img-ig04{
+    transition: .5s;
+}
+.img-ig04:hover{
+    margin:-0.5rem;
+    filter: grayscale(50);
+
+} */
 .communicate {
   background-color: #25272a;
   padding: 3.125rem 0;

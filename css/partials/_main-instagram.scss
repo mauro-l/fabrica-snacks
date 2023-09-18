@@ -25,10 +25,9 @@
             animation: scroll 40s linear infinite;
             width: calc(200px * 14);
             gap: 0 2px;
-
+            
             &--slide{
                 width: 200px;
-            
                 >img{
                     width: 100%;
                 }
@@ -48,7 +47,22 @@
     }
 }
 
-.img-ig01{
+@for $i from 1 through 14 {
+
+    .img-ig#{$i}{
+        transition: .5s;
+        
+    }
+    .img-ig#{$i}:hover{
+        filter: brightness(70%);
+        cursor: pointer;
+        width: 98%;
+    }
+
+}
+
+
+/* .img-ig01{
     transition: .5s;
 }
 .img-ig01:hover{
@@ -69,4 +83,4 @@
     margin:-0.5rem;
     filter: grayscale(50);
 
-}
+} */
