@@ -824,7 +824,6 @@ footer {
     /* width: 50%; */
     margin: 0 auto;
     margin-bottom: -3rem;
-    /* background-color: #fff; */
   }
 }
 .company__content-bt {
@@ -924,6 +923,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 3rem;
+    width: 90%;
     margin: 0 auto;
   }
   .company__content-bt--filosofia, .company__content-bt--calidad, .company__content-bt--mision {
@@ -953,12 +953,33 @@ footer {
     grid-column: 1;
     grid-row: 2;
   }
+  .company__content-bt--mision {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .company__content-video {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 3rem;
+  width: 90%;
+}
+.company__content-video > iframe {
+  width: 560px;
+  height: 315px;
+}
+@media screen and (min-width: 768px) {
+  .company__content-video > iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .company__content-video > iframe {
+    width: 800px;
+    height: 400px;
+  }
 }
 
 .product {

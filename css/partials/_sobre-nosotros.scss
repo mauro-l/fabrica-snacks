@@ -71,7 +71,6 @@
             /* width: 50%; */
             margin: 0 auto;
             margin-bottom: -3rem;
-            /* background-color: #fff; */
         }
     }
     /* ----- GRID ------ */
@@ -171,6 +170,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             padding: 3rem;
+            width: 90%;
             margin: 0 auto;
 
             &--filosofia,
@@ -198,6 +198,10 @@
                 grid-column: 1;
                 grid-row: 2;
             }
+            &--mision{
+                width: 90%;
+                margin: 0 auto;
+            }
         }
     }
     &-video{
@@ -205,6 +209,21 @@
         justify-content: center;
         margin: 0 auto;
         padding-bottom: 3rem;
+        width: 90%;
+
+        >iframe{
+            width: 560px;
+            height: 315px;
+            @include tablet{
+                width: 600px;
+                height: 400px;
+            }
+            @include desktop{
+                width: 800px;
+                height: 400px;
+            }
+        }
+        
     }
 }
 
