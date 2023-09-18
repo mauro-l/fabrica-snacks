@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=Nerko+One&family=Raleway:wght@300;400;500&family=Signika:wght@300;400;500;600;700&display=swap");
+/* $fontRaleway: 'Raleway', sans-serif; */
 * {
   padding: 0;
   margin: 0;
@@ -334,9 +335,9 @@ footer {
   background-position: center;
   margin: 2rem 0;
 }
-@media screen and (min-width: 399px) {
+@media screen and (min-width: 374px) {
   .container-news {
-    height: 60vh;
+    height: unset;
   }
 }
 @media screen and (min-width: 768px) {
@@ -395,7 +396,7 @@ footer {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 399px) {
+@media screen and (min-width: 374px) {
   .news__icon-cnt--box-icon {
     width: 90px;
     height: 75px;
@@ -683,7 +684,8 @@ footer {
 .communicate__text > h2 {
   font-size: 1.5rem;
   padding-bottom: 0.8rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Signika", sans-serif;
+  /* font-family: $fontRaleway; */
   color: #7cacd0;
   font-weight: 600;
 }
@@ -744,13 +746,14 @@ footer {
   text-align: center;
 }
 
-.company__content-bt,
-.company__content-video,
-.company__content-bt--mision {
+.company-cnt__content {
   background-image: url(../img/bg/bg_4.jpg);
   background-position: center;
 }
 
+.company__content {
+  /* ----- GRID ------ */
+}
 .company__content-top {
   display: flex;
   flex-direction: column;
@@ -763,9 +766,9 @@ footer {
   margin-bottom: 3rem;
 }
 .company__content-top > h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2.25rem;
-  font-weight: 800;
+  font-family: "Signika", sans-serif;
+  font-size: 3.25rem;
+  font-weight: 600;
   margin-bottom: 1.6rem;
   color: #25272a;
 }
@@ -787,48 +790,91 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  position: relative;
+  height: 10vh;
+  margin-bottom: -3rem;
 }
 .company__content-img > img {
-  width: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  /* width: 80%;
   margin-top: -10%;
-  padding-top: 0.7rem;
+  padding-top: .7rem;
+
+  @include tablet{
+      width: 50%;
+      margin: -7%;
+      padding: 1rem 0;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .company__content-img > img {
     width: 50%;
-    margin: -7%;
-    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .company__content-img > img {
-    width: 50%;
-    margin: -5%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 992px) {
   .company__content-img {
-    width: 50%;
+    /* width: 50%; */
     margin: 0 auto;
-    background-color: #fff;
+    margin-bottom: -3rem;
+    /* background-color: #fff; */
   }
 }
-.company__content-bt--mision {
-  padding: 5rem 1.8rem 2.3rem 1.8rem;
-  background-color: #f2f2f2;
+.company__content-bt {
+  /* --------- MEDIAQ DESKTOP ------ */
+  /* @include desktop{
+      &--filosofia,
+      &--calidad,
+      &--mision {
+          @include flex(column, space-evenly,center);
+          p, 
+          h2{
+              width: 60%;
+              margin: 0 auto;
+              line-height: unset;
+          }
+          h2{
+              text-align: center;
+          }
+      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 4rem 0;
+
+      .stand-feria{
+          grid-column: 2;
+          @include tablet{
+              display: flex;
+              justify-content: flex-start;
+          }
+      }
+      &--filosofia{
+          grid-column: 1;
+          grid-row: 2;
+      }
+      &--mision{
+          width: 100%;
+          height: 20vh;
+      }            
+  } */
+}
+.company__content-bt--mision, .company__content-bt--calidad, .company__content-bt--filosofia {
+  padding: 1.8rem;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
-  .company__content-bt--mision {
-    padding: 2.3rem 1.8rem 0.3rem 1.8rem;
-  }
-}
-.company__content-bt--calidad, .company__content-bt--filosofia {
-  padding: 1.8rem;
-}
 @media screen and (min-width: 768px) {
-  .company__content-bt--calidad p, .company__content-bt--filosofia p {
+  .company__content-bt--mision--calidad, .company__content-bt--mision--filosofia, .company__content-bt--calidad--calidad, .company__content-bt--calidad--filosofia, .company__content-bt--filosofia--calidad, .company__content-bt--filosofia--filosofia {
+    padding: 0 1.8rem;
+  }
+  .company__content-bt--mision p, .company__content-bt--calidad p, .company__content-bt--filosofia p {
     padding-top: 0;
     padding-bottom: 2rem;
   }
@@ -842,18 +888,19 @@ footer {
 }
 .company__content-bt--img {
   margin: 0;
-}
-@media screen and (min-width: 992px) {
-  .company__content-bt--img {
-    display: flex;
-    justify-content: flex-end;
-  }
+  /* @include desktop{
+      display: flex;
+      justify-content: flex-end;
+
+  } */
 }
 .company__content-bt--img img {
   display: flex;
   width: 100%;
   margin: 0;
   max-width: unset;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .company__content-bt--img img {
@@ -867,6 +914,8 @@ footer {
   .company__content-bt--img img {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -874,42 +923,35 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 4rem 0;
+    padding: 3rem;
+    margin: 0 auto;
   }
   .company__content-bt--filosofia, .company__content-bt--calidad, .company__content-bt--mision {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding: 1.3rem;
+    width: 100%;
   }
   .company__content-bt--filosofia p,
   .company__content-bt--filosofia h2, .company__content-bt--calidad p,
   .company__content-bt--calidad h2, .company__content-bt--mision p,
   .company__content-bt--mision h2 {
-    width: 60%;
-    margin: 0 auto;
-  }
-  .company__content-bt--filosofia h2, .company__content-bt--calidad h2, .company__content-bt--mision h2 {
+    line-height: unset;
     text-align: center;
+    margin: 0;
+  }
+  .company__content-bt--filosofia p, .company__content-bt--calidad p, .company__content-bt--mision p {
+    font-size: 1.125rem;
+    padding: 1.3rem;
   }
   .company__content-bt .stand-feria {
     grid-column: 2;
   }
-}
-@media screen and (min-width: 992px) and (min-width: 768px) {
-  .company__content-bt .stand-feria {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 992px) {
   .company__content-bt--filosofia {
     grid-column: 1;
     grid-row: 2;
-  }
-  .company__content-bt--mision {
-    width: 100%;
-    height: 20vh;
   }
 }
 .company__content-video {
@@ -1053,7 +1095,7 @@ footer {
 .fritura-cnt__body {
   background-color: #dbdbdb;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .fritura-cnt__body {
     flex-direction: row;
   }
@@ -1062,9 +1104,10 @@ footer {
   display: flex;
   padding: 2rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .fritura-cnt__body-box {
     width: 60%;
+    padding: 1rem;
   }
 }
 .fritura-cnt__body-box--text {
@@ -1079,14 +1122,20 @@ footer {
   }
 }
 .fritura-cnt__body--img {
+  display: none;
   align-items: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .fritura-cnt__body--img {
+    display: block;
+  }
 }
 .fritura-cnt__body--img > img {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .fritura-cnt__body--img > img {
-    width: 80%;
+    width: 500px;
   }
 }
 @media screen and (min-width: 992px) {
