@@ -5,6 +5,10 @@
     background-size: cover;
     background-position: center;
     padding: 1.8rem;
+
+    @include desktop{
+        padding: 3.8rem;
+    }
     
     .about-us {
         

@@ -1,7 +1,5 @@
 .sign{
-    /* background-image: radial-gradient(#fbf9f6,$gray);
-    padding: 3.125rem; */
-
+    
     &__text{
         @include flex (column, center, center);
          > h2{
@@ -13,11 +11,6 @@
             max-width: 500px;
             padding: 3.125rem 1.3rem 0 1.3rem;
         }
-        /* > p{
-            background-color: $green;
-            border-radius: 25% 10%;
-            padding: 2rem;
-        } */
     }
         
 }

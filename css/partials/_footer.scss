@@ -1,14 +1,14 @@
 .footer__top{
     background-color: $gray;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    padding-top: 1.875rem;
-    padding-bottom: 3.125rem;
+    padding: 3.5rem;
+
 
     &--contact{
         font-size: 14px;
         padding: 1rem;
-        width: 50%;
 
         > h2{
             font-size: 1.8rem;
@@ -25,9 +25,8 @@
     }
 
     &--incalfer{
-        text-align: end;
+        text-align: center;
         padding: 1rem;
-        width: 50%;
     }
 }
 

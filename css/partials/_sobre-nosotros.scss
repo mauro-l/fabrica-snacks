@@ -1,5 +1,5 @@
 .company-cnt__content{
-    background-image: url(../img/bg/bg_4.jpg);
+    background-image: url(../img/bg/bg_2.jpg);
     background-position: center;
 }
 
@@ -7,10 +7,9 @@
     &-top{
         @include flex(column, center,center);
         flex-wrap: wrap;
-        padding: 1.3rem;
+        padding: 2.3rem;
         width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3rem;
+        margin: 2.5rem auto;
                 
         > h2{
             font-family: $fontRubik;
@@ -18,6 +17,10 @@
             font-weight: 600;
             margin-bottom: 1.6rem;
             color: $text-black;
+            
+            @include desktop{
+                font-size: 3.7rem;
+            }
         }
     
         &--text{
@@ -41,7 +44,6 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        /* align-items: center; */
         position: relative;
         height: 10vh;
         margin-bottom: -3rem;
@@ -51,15 +53,6 @@
             position: absolute;
             bottom: 50%;
 
-            /* width: 80%;
-            margin-top: -10%;
-            padding-top: .7rem;
-
-            @include tablet{
-                width: 50%;
-                margin: -7%;
-                padding: 1rem 0;
-            }*/
             @include tablet{
             width: 50%;
             }
@@ -72,8 +65,8 @@
             margin: 0 auto;
             margin-bottom: -3rem;
         }
+        /* ----- GRID ------ */
     }
-    /* ----- GRID ------ */
     &-bt{
         &--mision,
         &--calidad,
@@ -102,11 +95,7 @@
         }
         &--img{
             margin: 0;
-            /* @include desktop{
-                display: flex;
-                justify-content: flex-end;
-                
-            } */
+
             img{
                 display: flex;
                 width: 100%;
@@ -128,43 +117,7 @@
                 }
             } 
         }
-        /* --------- MEDIAQ DESKTOP ------ */
-        /* @include desktop{
-            &--filosofia,
-            &--calidad,
-            &--mision {
-                @include flex(column, space-evenly,center);
-                p, 
-                h2{
-                    width: 60%;
-                    margin: 0 auto;
-                    line-height: unset;
-                }
-                h2{
-                    text-align: center;
-                }
-            }
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            padding: 4rem 0;
-
-            .stand-feria{
-                grid-column: 2;
-                @include tablet{
-                    display: flex;
-                    justify-content: flex-start;
-                }
-            }
-            &--filosofia{
-                grid-column: 1;
-                grid-row: 2;
-            }
-            &--mision{
-                width: 100%;
-                height: 20vh;
-            }            
-        } */
+        
         @include desktop{
             display: grid;
             grid-template-columns: 1fr 1fr;

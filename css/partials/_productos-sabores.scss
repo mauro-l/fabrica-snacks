@@ -24,8 +24,8 @@
             }
             .flavors-top__left--img{
                 position: absolute;
-                width: 150px;
-                right: 0%;
+                width: 120px;
+                right: 6%;
                 bottom: 20%;
                 @include tablet{
                     right: -15%;
@@ -50,11 +50,18 @@
 .flavors-mid{
     width: 100%;
     filter: drop-shadow(10px 5px 10px $beige) invert(20%);
+    padding: 2rem;
+
+    &--img{
+        display: flex;
+        justify-content: center;
+    }
 
 }
 .flavors-bt{
-    width: 100%;
+    width: 80%;
     padding: 1rem;
+    margin: 0 auto;
 
     &__text{
         text-align: center;

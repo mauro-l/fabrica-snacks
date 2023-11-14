@@ -18,6 +18,10 @@
     background-size: 100% 90%;
     background-position: center top;
 
+    @include desktop{
+        padding: 2rem;
+    }
+
     &-cnt {
         @include flex (column, center, center);
         margin: 1.8rem;

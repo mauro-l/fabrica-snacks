@@ -10,8 +10,8 @@
     background-color: #fff;
     background-image: url(../img/bg/shape_bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: initial;
+    background-position: left;
     margin: 2rem 0;
 
     @include mobile{
@@ -24,21 +24,22 @@
     @include desktop{
         flex-wrap: wrap;
         height: unset;
+        padding: 2rem;
     }
 }
 
 .news{
-    /* @include flex (column, center, center); */
     padding: 2rem;
     height: 100%;
     @include desktop{
         padding: 3rem;
     }
-
+    
     &__icon{
         width: 100%;   
         @include desktop{
             width: 80%;
+            margin-bottom: 3rem;
         }     
 
         &-cnt{
@@ -91,14 +92,10 @@
     }
 
     &-carousel{
-        /* @include flex (row, center, flex-start); */
         align-items: flex-start;
-        /* padding: 2rem;
-        height: 250px; */
         
         @include desktop {
             max-width: 926px;
-            /* height: unset; */
         }
 
         &__body{

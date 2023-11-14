@@ -7,8 +7,22 @@
     width: 100%;
 }
 .hero__main{
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/hero1.png);
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
     padding: 2.3rem;
+
+    &::before {
+        content: '';
+        background-color: rgba(0,0,0,0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(2px) brightness(.9); 
+    }
 
     &-title{
         /* display: flex;
@@ -97,16 +111,18 @@
                 }
 
                 &-cono{
-                    .arrow-maiz--f{
+                    display: flex;
+                    .arrow-maiz--back{
                         display: none;
                     }
-                    &:hover .arrow-maiz--o{
-                        display: none;     
+                    & img{
+                        animation: flip-in-diag-2-tl 2.5s cubic-bezier(.25,.46,.45,.94);
                     }
-                    &:hover .arrow-maiz--f{
+                    &:hover .arrow-maiz--back{
                         display: block;
-                        -webkit-animation:flip-in-diag-2-tl 1.5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-diag-2-tl 1.5s cubic-bezier(.25,.46,.45,.94) both;
-                        @-webkit-keyframes flip-in-diag-2-tl{0%{-webkit-transform:rotate3d(-1,1,0,80deg);transform:rotate3d(-1,1,0,80deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}}@keyframes flip-in-diag-2-tl{0%{-webkit-transform:rotate3d(-1,1,0,80deg);transform:rotate3d(-1,1,0,80deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}};
+                    }
+                    &:hover .arrow-maiz--front{
+                        display: none;
                     }
                 }
                 >img{
@@ -114,5 +130,17 @@
                 }
             }
         }
+    }
+}
+
+@keyframes flip-in-diag-2-tl{
+    0%{-webkit-transform:rotate3d(-1,1,0,80deg);
+        transform:rotate3d(-1,1,0,80deg);
+        opacity:0
+    }
+    100%{
+        -webkit-transform:rotate3d(1,1,0,0deg);
+        transform:rotate3d(1,1,0,0deg);
+        opacity:1
     }
 }

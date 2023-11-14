@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -22,7 +23,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="./img/Incalfood-Logo-1.png" alt="logo" width="100">
@@ -48,14 +49,17 @@
                       <li><a class="dropdown-item" href="./pages/sabores-productos.html">Sabores</a></li>
                     </ul>
                   </li>                  
-                  <li class="nav-item">
+                  <li class="nav-item d-block d-lg-none">
                     <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/dejarCv.html">Dejar cv</a>
+                    <a class="nav-link" href="./pages/dejarCv.html">Dejar-Cv</a>
                   </li>
                 </ul>
               </div>
+              <form class="d-none d-lg-block ">
+                  <button class="btn btn-lg btn-danger m-2" type="button"><a class="nav-link" href="pages/contacto.html#sobreMi">Contactanos!</a></button>
+              </form>
             </div>
         </nav>
     </header>
@@ -75,16 +79,16 @@
                         <div class="title-arrow">
                             <div class="title-arrow--img">
                                 <picture class="title-arrow--img-cono">
-                                    <img class="arrow-maiz--o" src="./img/snacks-product/productos-item/maiz-snack/cono-rojo300x300.png" alt="">
-                                    <img class="arrow-maiz--f" src="./img/snacks-product/productos-item/maiz-snack/cono-rojo-f300x300.png" alt="">
+                                    <img class="arrow-maiz--front" src="./img/snacks-product/productos-item/maiz-snack/cono-rojo300x300.png" alt="">
+                                    <img class="arrow-maiz--back" src="./img/snacks-product/productos-item/maiz-snack/cono-rojo-f300x300.png" alt="">
                                 </picture>
                                 <picture class="title-arrow--img-cono">
-                                    <img class="arrow-maiz--o" src="./img/snacks-product/productos-item/trigo-snack/pancetita - 300x300.png" alt="">
-                                    <img class="arrow-maiz--f" src="./img/snacks-product/productos-item/trigo-snack/pancetita-f.png" alt="">                                 
+                                    <img class="arrow-maiz--front" src="./img/snacks-product/productos-item/trigo-snack/pancetita - 300x300.png" alt="">
+                                    <img class="arrow-maiz--back" src="./img/snacks-product/productos-item/trigo-snack/pancetita-f.png" alt="">                                 
                                 </picture>
                                 <picture class="title-arrow--img-cono">
-                                    <img class="arrow-maiz--o" src="./img/snacks-product/productos-item/trigo-snack/cascarita-300x300.png" alt="">
-                                    <img class="arrow-maiz--f" src="./img/snacks-product/productos-item/trigo-snack/cascarita-f.png" alt="">
+                                    <img class="arrow-maiz--front" src="./img/snacks-product/productos-item/trigo-snack/cascarita-300x300.png" alt="">
+                                    <img class="arrow-maiz--back" src="./img/snacks-product/productos-item/trigo-snack/cascarita-f.png" alt="">
                                 </picture>
                             </div>
                         </div>
@@ -108,9 +112,12 @@
                             <a href="./pages/nosotros.html"><button type="button" class="btn btn-outline-danger">Leer más</button></a>                      
                         </div>
                     </div>
-                    <div class="about-us__img">
-                        <img src="./img/Incalfood-Logo-1.png" alt="logo de la empresa">
-                        <h2>Calidad, inocuidad y autenticidad</h2>
+                    <div class="about-us__img" >
+                        <img src="./img/Incalfood-Logo-1.png" alt="logo de la empresa" data-aos="zoom-in" data-aos-easing="ease-in-back"
+                        data-aos-offset="100"
+                        data-aos-duration="500">
+                        <h2 data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="top-bottom" >Calidad, inocuidad y autenticidad</h2>
+                        
                     </div>
                 </article>
             </section>
@@ -349,6 +356,10 @@
             el: ".swiper-pagination",
           },
         });
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
       </script>
 </body>
 
